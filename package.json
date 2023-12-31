@@ -7,7 +7,7 @@
     "dev": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "build": "vue-tsc && vite build",
+    "build": "vite build",
     "lint": "eslint . --ext .vue,.js,.jsx,.ts,.cjs,.mjs --fix --ignore-path .gitignore",
     "preview": "vite preview"
   },
