@@ -1,5 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TheHeader from './TheHeader.vue'
+import TheFooter from './TheFooter.vue'
+import { currentPage, routes } from '../modules/router.ts'
+</script>
 
 <template>
-	<div class="text-3xl underline">classes</div>
+	<TheHeader />
+	<main class="flex flex-1 flex-col max-w-screen-lg px-8 py-6">
+		<component :is="routes[currentPage]" />
+	</main>
+	<TheFooter />
 </template>
