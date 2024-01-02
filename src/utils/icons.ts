@@ -10,267 +10,506 @@ import {
 
 export const devIcons = {
 	[ICONS_FRONTEND]: [
-		{ icon: 'devicon-html5-plain colored', text: 'html5' },
-		{ icon: 'devicon-css3-plain colored', text: 'css3' },
-		{ icon: 'devicon-sass-original colored', text: 'sass' },
 		{
-			icon: 'devicon-bootstrap-plain colored',
-			text: 'bootstrap',
+			name: 'html5',
+			type: 'original',
 		},
 		{
-			icon: 'devicon-tailwindcss-plain colored',
-			text: 'tailwindcss',
+			name: 'css3',
+			type: 'original',
 		},
 		{
-			icon: 'devicon-materialui-plain colored',
-			text: 'materialui',
+			name: 'sass',
+			type: 'original',
 		},
 		{
-			icon: 'devicon-javascript-plain colored',
-			text: 'javascript',
+			name: 'bootstrap',
+			type: 'original',
 		},
 		{
-			icon: 'devicon-typescript-plain colored',
-			text: 'typescript',
-		},
-		{ icon: 'devicon-react-original colored', text: 'react' },
-		{ icon: 'devicon-redux-original colored', text: 'redux' },
-		{ icon: 'devicon-nextjs-original colored', text: 'nextjs' },
-		{ icon: 'devicon-vuejs-plain colored', text: 'vuejs' },
-		{ icon: 'devicon-vuetify-line colored', text: 'vuetify' },
-		{ icon: 'devicon-nuxtjs-plain colored', text: 'nuxtjs' },
-		{
-			icon: 'devicon-angularjs-plain colored',
-			text: 'angularjs',
-		},
-		{ icon: 'devicon-svelte-plain colored', text: 'svelte' },
-		{ icon: 'devicon-gulp-plain colored', text: 'gulp' },
-		{ icon: 'devicon-webpack-plain colored', text: 'webpack' },
-		{ icon: 'devicon-d3js-plain colored', text: 'd3js' },
-		{ icon: 'devicon-eslint-original colored', text: 'eslint' },
-		{
-			icon: 'devicon-wordpress-plain colored',
-			text: 'wordpress',
+			name: 'tailwindcss',
+			type: 'plain',
 		},
 		{
-			icon: 'devicon-eleventy-plain colored',
-			text: 'eleventy',
-		},
-		{ icon: 'devicon-babel-plain colored', text: 'babel' },
-		{ icon: 'devicon-gatsby-plain colored', text: 'gatsby' },
-		{ icon: 'devicon-django-plain colored', text: 'django' },
-		{
-			icon: 'devicon-markdown-original colored',
-			text: 'markdown',
+			name: 'materialui',
+			type: 'original',
 		},
 		{
-			icon: 'devicon-backbonejs-plain colored',
-			text: 'backbonejs',
-		},
-		{ icon: 'devicon-hugo-plain colored', text: 'hugo' },
-		{
-			icon: 'devicon-threejs-original colored',
-			text: 'threejs',
+			name: 'javascript',
+			type: 'original',
 		},
 		{
-			icon: 'devicon-magento-original colored',
-			text: 'magento',
+			name: 'typescript',
+			type: 'original',
+		},
+		{
+			name: 'react',
+			type: 'original',
+		},
+		{
+			name: 'redux',
+			type: 'original',
+		},
+		{
+			name: 'nextjs',
+			type: 'original',
+		},
+		{
+			name: 'vuejs',
+			type: 'original',
+		},
+		{
+			name: 'vuetify',
+			type: 'original',
+		},
+		{
+			name: 'nuxtjs',
+			type: 'original',
+		},
+		{
+			name: 'angularjs',
+			type: 'original',
+		},
+		{
+			name: 'svelte',
+			type: 'original',
+		},
+		{ name: 'gulp', type: 'plain' },
+		{
+			name: 'webpack',
+			type: 'original',
+		},
+		{
+			name: 'd3js',
+			type: 'original',
+		},
+		{
+			name: 'eslint',
+			type: 'original',
+		},
+		{
+			name: 'wordpress',
+			type: 'original',
+		},
+		{
+			name: 'eleventy',
+			type: 'original',
+		},
+		{
+			name: 'babel',
+			type: 'original',
+		},
+		{
+			name: 'gatsby',
+			type: 'original',
+		},
+		{
+			name: 'django',
+			type: 'plain',
+		},
+		{
+			name: 'markdown',
+			type: 'original',
+		},
+		{
+			name: 'backbonejs',
+			type: 'original',
+		},
+		{
+			name: 'hugo',
+			type: 'original',
+		},
+		{
+			name: 'threejs',
+			type: 'original',
+		},
+		{
+			name: 'magento',
+			type: 'original',
 		},
 	],
 	[ICONS_BACKEND]: [
-		{ icon: 'devicon-nodejs-plain colored', text: 'nodejs' },
 		{
-			icon: 'devicon-express-original colored',
-			text: 'express',
-		},
-		{ icon: 'devicon-graphql-plain colored', text: 'graphql' },
-		{
-			icon: 'devicon-apachekafka-original colored',
-			text: 'apachekafka',
-		},
-		{ icon: 'devicon-r-original colored', text: 'r' },
-		{ icon: 'devicon-rails-plain colored', text: 'rails' },
-		{ icon: 'devicon-nestjs-plain colored', text: 'nestjs' },
-		{ icon: 'devicon-nginx-original colored', text: 'nginx' },
-		{
-			icon: 'devicon-adonisjs-original colored',
-			text: 'adonisjs',
-		},
-		{ icon: 'devicon-pycharm-plain colored', text: 'pycharm' },
-		{
-			icon: 'devicon-pytorch-original colored',
-			text: 'pytorch',
-		},
-		{ icon: 'devicon-pandas-original colored', text: 'pandas' },
-		{ icon: 'devicon-meteor-plain colored', text: 'meteor' },
-		{ icon: 'devicon-apache-plain colored', text: 'apache' },
-		{ icon: 'devicon-drupal-plain colored', text: 'drupal' },
-		{ icon: 'devicon-laravel-plain colored', text: 'laravel' },
-		{ icon: 'devicon-flask-original colored', text: 'flask' },
-		{
-			icon: 'devicon-kubernetes-plain colored',
-			text: 'kubernetes',
-		},
-		{ icon: 'devicon-jenkins-line colored', text: 'jenkins' },
-		{ icon: 'devicon-composer-line colored', text: 'composer' },
-		{ icon: 'devicon-docker-plain colored', text: 'docker' },
-		{
-			icon: 'devicon-circleci-plain colored',
-			text: 'circleci',
+			name: 'nodejs',
+			type: 'original',
 		},
 		{
-			icon: 'devicon-appwrite-plain colored',
-			text: 'appwrite',
-		},
-		{ icon: 'devicon-bash-plain colored', text: 'bash' },
-		{ icon: 'devicon-azure-plain colored', text: 'azure' },
-		{
-			icon: 'devicon-socketio-original colored',
-			text: 'socketio',
+			name: 'express',
+			type: 'original',
 		},
 		{
-			icon: 'devicon-firebase-plain colored',
-			text: 'firebase',
+			name: 'graphql',
+			type: 'plain',
 		},
-		{ icon: 'devicon-cakephp-plain colored', text: 'cakephp' },
-		{ icon: 'devicon-mongodb-plain colored', text: 'mongodb' },
-		{ icon: 'devicon-mysql-plain colored', text: 'mysql' },
 		{
-			icon: 'devicon-sqlalchemy-plain colored',
-			text: 'sqlalchemy',
+			name: 'apachekafka',
+			type: 'original',
 		},
-		{ icon: 'devicon-sqlite-plain colored', text: 'sqlite' },
 		{
-			icon: 'devicon-postgresql-plain colored',
-			text: 'postgresql',
+			name: 'r',
+			type: 'original',
 		},
-		{ icon: 'devicon-redis-plain colored', text: 'redis' },
-		{ icon: 'devicon-oracle-original colored', text: 'oracle' },
-		{ icon: 'devicon-rocksdb-plain colored', text: 'rocksdb' },
-		{ icon: 'devicon-couchdb-plain colored', text: 'couchdb' },
+		{
+			name: 'rails',
+
+			type: 'plain',
+		},
+		{
+			name: 'nestjs',
+			type: 'plain',
+		},
+		{
+			name: 'nginx',
+			type: 'original',
+		},
+		{
+			name: 'adonisjs',
+			type: 'original',
+		},
+		{
+			name: 'pycharm',
+			type: 'original',
+		},
+		{
+			name: 'pytorch',
+			type: 'original',
+		},
+		{
+			name: 'pandas',
+			type: 'original',
+		},
+		{
+			name: 'meteor',
+			type: 'original',
+		},
+		{
+			name: 'apache',
+			type: 'original',
+		},
+		{
+			name: 'drupal',
+			type: 'original',
+		},
+		{
+			name: 'laravel',
+			type: 'plain',
+		},
+		{
+			name: 'flask',
+			type: 'original',
+		},
+		{
+			name: 'kubernetes',
+			type: 'plain',
+		},
+		{
+			name: 'jenkins',
+			type: 'original',
+		},
+		{
+			name: 'composer',
+			type: 'original',
+		},
+		{
+			name: 'docker',
+			type: 'original',
+		},
+		{
+			name: 'circleci',
+			type: 'plain',
+		},
+		{
+			name: 'appwrite',
+			type: 'original',
+		},
+		{
+			name: 'bash',
+			type: 'original',
+		},
+		{
+			name: 'azure',
+			type: 'original',
+		},
+		{
+			name: 'socketio',
+			type: 'original',
+		},
+		{
+			name: 'firebase',
+			type: 'plain',
+		},
+		{
+			name: 'cakephp',
+			type: 'original',
+		},
+		{
+			name: 'mongodb',
+			type: 'original',
+		},
+		{
+			name: 'mysql',
+			type: 'original',
+		},
+		{
+			name: 'sqlalchemy',
+			type: 'original',
+		},
+		{
+			name: 'sqlite',
+			type: 'original',
+		},
+		{
+			name: 'postgresql',
+			type: 'original',
+		},
+		{
+			name: 'redis',
+			type: 'original',
+		},
+		{
+			name: 'oracle',
+			type: 'original',
+		},
+		{
+			name: 'rocksdb',
+			type: 'plain',
+		},
+		{
+			name: 'couchdb',
+			type: 'original',
+		},
 	],
 	[ICONS_TESTING]: [
-		{ icon: 'devicon-jest-plain colored', text: 'jest' },
-		{ icon: 'devicon-mocha-plain colored', text: 'mocha' },
+		{ name: 'jest', type: 'plain' },
 		{
-			icon: 'devicon-selenium-original colored',
-			text: 'selenium',
+			name: 'mocha',
+
+			type: 'plain',
 		},
-		{ icon: 'devicon-karma-plain colored', text: 'karma' },
-		{ icon: 'devicon-jasmine-plain colored', text: 'jasmine' },
-		{ icon: 'devicon-pytest-plain colored', text: 'pytest' },
+		{
+			name: 'selenium',
+			type: 'original',
+		},
+		{
+			name: 'karma',
+			type: 'original',
+		},
+		{
+			name: 'jasmine',
+			type: 'plain',
+		},
+		{
+			name: 'pytest',
+			type: 'original',
+		},
 	],
 	[ICONS_PROGRAMMING]: [
-		{ icon: 'devicon-c-plain colored', text: 'c' },
 		{
-			icon: 'devicon-raspberrypi-line colored',
-			text: 'raspberrypi',
+			name: 'c',
+			type: 'original',
 		},
 		{
-			icon: 'devicon-cplusplus-plain colored',
-			text: 'cplusplus',
-		},
-		{ icon: 'devicon-csharp-plain colored', text: 'csharp' },
-		{
-			icon: 'devicon-go-original-wordmark colored',
-			text: 'go',
+			name: 'raspberrypi',
+			type: 'original',
 		},
 		{
-			icon: 'devicon-objectivec-plain colored',
-			text: 'objectivec',
+			name: 'cplusplus',
+			type: 'original',
 		},
-		{ icon: 'devicon-java-plain colored', text: 'java' },
-		{ icon: 'devicon-rust-plain colored', text: 'rust' },
-		{ icon: 'devicon-elixir-plain colored', text: 'elixir' },
-		{ icon: 'devicon-php-plain colored', text: 'php' },
-		{ icon: 'devicon-perl-plain colored', text: 'perl' },
-		{ icon: 'devicon-ruby-plain colored', text: 'ruby' },
-		{ icon: 'devicon-scala-plain colored', text: 'scala' },
-		{ icon: 'devicon-haskell-plain colored', text: 'haskell' },
-		{ icon: 'devicon-erlang-plain colored', text: 'erlang' },
-		{ icon: 'devicon-python-plain colored', text: 'python' },
-		{ icon: 'devicon-numpy-original colored', text: 'numpy' },
-		{ icon: 'devicon-swift-plain colored', text: 'swift' },
-		{ icon: 'devicon-clojure-line colored', text: 'clojure' },
 		{
-			icon: 'devicon-dotnetcore-plain colored',
-			text: 'etcore',
+			name: 'csharp',
+			type: 'original',
+		},
+		{
+			name: 'go',
+			type: 'original-wordmark',
+		},
+		{
+			name: 'objectivec',
+			type: 'plain',
+		},
+		{
+			name: 'java',
+			type: 'original',
+		},
+		{ name: 'rust', type: 'plain' },
+		{
+			name: 'elixir',
+			type: 'original',
+		},
+		{
+			name: 'php',
+			type: 'original',
+		},
+		{
+			name: 'perl',
+			type: 'original',
+		},
+		{
+			name: 'ruby',
+			type: 'original',
+		},
+		{
+			name: 'scala',
+			type: 'original',
+		},
+		{
+			name: 'haskell',
+			type: 'original',
+		},
+		{
+			name: 'erlang',
+			type: 'original',
+		},
+		{
+			name: 'python',
+			type: 'original',
+		},
+		{
+			name: 'numpy',
+			type: 'original',
+		},
+		{
+			name: 'swift',
+			type: 'original',
+		},
+		{
+			name: 'clojure',
+			type: 'original',
+		},
+		{
+			name: 'dotnetcore',
+			type: 'plain',
 		},
 	],
 	[ICONS_MOBILE]: [
-		{ icon: 'devicon-android-plain colored', text: 'android' },
-		{ icon: 'devicon-dart-plain colored', text: 'dart' },
 		{
-			icon: 'devicon-androidstudio-plain colored',
-			text: 'androidstudio',
+			name: 'android',
+			type: 'original',
 		},
-		{ icon: 'devicon-kotlin-plain colored', text: 'kotlin' },
 		{
-			icon: 'devicon-xamarin-original colored',
-			text: 'xamarin',
+			name: 'dart',
+			type: 'original',
 		},
-		{ icon: 'devicon-flutter-plain colored', text: 'flutter' },
-		{ icon: 'devicon-ionic-original colored', text: 'ionic' },
+		{
+			name: 'androidstudio',
+			type: 'original',
+		},
+		{
+			name: 'kotlin',
+			type: 'original',
+		},
+		{
+			name: 'xamarin',
+			type: 'original',
+		},
+		{
+			name: 'flutter',
+			type: 'original',
+		},
+		{
+			name: 'ionic',
+			type: 'original',
+		},
 	],
 	[ICONS_SOFTWARE]: [
-		{ icon: 'devicon-xcode-plain colored', text: 'xcode' },
 		{
-			icon: 'devicon-aftereffects-plain colored',
-			text: 'aftereffects',
+			name: 'xcode',
+			type: 'original',
 		},
 		{
-			icon: 'devicon-photoshop-plain colored',
-			text: 'photoshop',
+			name: 'aftereffects',
+			type: 'original',
 		},
 		{
-			icon: 'devicon-filezilla-plain colored',
-			text: 'filezilla',
-		},
-		{ icon: 'devicon-figma-plain colored', text: 'figma' },
-		{ icon: 'devicon-canva-original colored', text: 'canva' },
-		{
-			icon: 'devicon-illustrator-plain colored',
-			text: 'illustrator',
+			name: 'photoshop',
+			type: 'plain',
 		},
 		{
-			icon: 'devicon-phpstorm-plain colored',
-			text: 'phpstorm',
+			name: 'filezilla',
+			type: 'plain',
 		},
 		{
-			icon: 'devicon-webstorm-plain colored',
-			text: 'webstorm',
+			name: 'figma',
+			type: 'original',
 		},
-		{ icon: 'devicon-matlab-plain colored', text: 'matlab' },
-		{ icon: 'devicon-sketch-line colored', text: 'sketch' },
 		{
-			icon: 'devicon-blender-original colored',
-			text: 'blender',
+			name: 'canva',
+			type: 'original',
 		},
-		{ icon: 'devicon-unity-original colored', text: 'unity' },
-		{ icon: 'devicon-slack-plain colored', text: 'slack' },
 		{
-			icon: 'devicon-jetbrains-plain colored',
-			text: 'jetbrains',
+			name: 'illustrator',
+			type: 'plain',
 		},
-		{ icon: 'devicon-vscode-plain colored', text: 'vscode' },
+		{
+			name: 'phpstorm',
+			type: 'original',
+		},
+		{
+			name: 'webstorm',
+			type: 'original',
+		},
+		{
+			name: 'matlab',
+			type: 'original',
+		},
+		{
+			name: 'sketch',
+			type: 'original',
+		},
+		{
+			name: 'blender',
+			type: 'original',
+		},
+		{
+			name: 'unity',
+			type: 'original',
+		},
+		{
+			name: 'slack',
+			type: 'original',
+		},
+		{
+			name: 'jetbrains',
+			type: 'original',
+		},
+		{
+			name: 'vscode',
+			type: 'original',
+		},
 	],
 	[ICONS_SYSTEM_CONTROL]: [
-		{ icon: 'devicon-git-plain colored', text: 'git' },
-		{ icon: 'devicon-github-original colored', text: 'github' },
-		{ icon: 'devicon-gitlab-plain colored', text: 'gitlab' },
 		{
-			icon: 'devicon-bitbucket-original colored',
-			text: 'bitbucket',
+			name: 'git',
+			type: 'original',
 		},
-		{ icon: 'devicon-jira-plain colored', text: 'jira' },
 		{
-			icon: 'devicon-confluence-original colored',
-			text: 'confluence',
+			name: 'github',
+			type: 'original',
 		},
-		{ icon: 'devicon-trello-plain colored', text: 'trello' },
 		{
-			icon: 'devicon-storybook-plain colored',
-			text: 'storybook',
+			name: 'gitlab',
+			type: 'original',
+		},
+		{
+			name: 'bitbucket',
+			type: 'original',
+		},
+		{
+			name: 'jira',
+			type: 'original',
+		},
+		{
+			name: 'confluence',
+			type: 'original',
+		},
+		{
+			name: 'trello',
+			type: 'plain',
+		},
+		{
+			name: 'storybook',
+			type: 'original',
 		},
 	],
 }

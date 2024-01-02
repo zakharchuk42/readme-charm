@@ -3,12 +3,8 @@ import { computed, ref } from 'vue'
 
 defineProps({
 	icon: {
-		type: String,
+		type: Object,
 		required: true,
-	},
-	text: {
-		type: String,
-		required: false,
 	},
 })
 
@@ -34,12 +30,17 @@ const classes = computed(() => {
 		@mouseenter="isShowTooltip = !isShowTooltip"
 		@mouseleave="isShowTooltip = !isShowTooltip"
 	>
-		<i :class="`${icon} text-5xl`"></i>
+		<img
+			:alt="icon.name"
+			:src="`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${icon.name}/${icon.name}-${icon.type}.svg`"
+			width="60"
+			height="80"
+		/>
 		<div
 			v-show="isShowTooltip"
 			class="absolute z-10 left-0 bottom-30 bg-white text-stone-600 border p-2"
 		>
-			{{ text }}
+			{{ icon.name }}
 		</div>
 	</div>
 </template>

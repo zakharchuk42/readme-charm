@@ -8,7 +8,7 @@ export const ICONS_TESTING = 'testing'
 export const ICONS_PROGRAMMING = 'programming'
 export const ICONS_MOBILE = 'mobile'
 export const ICONS_SOFTWARE = 'software'
-export const ICONS_SYSTEM_CONTROL = 'system control'
+export const ICONS_SYSTEM_CONTROL = 'system_control'
 
 export const NAV_ITEMS = [
 	PAGE_GENERATE_README,
