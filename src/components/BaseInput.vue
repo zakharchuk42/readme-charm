@@ -42,7 +42,7 @@ provide('emojiClick', emojiClick)
 </script>
 
 <template>
-	<div class="w-full flex">
+	<div class="relative w-full flex">
 		<input
 			type="text"
 			ref="myInput"
@@ -50,7 +50,7 @@ provide('emojiClick', emojiClick)
 			v-model="writeableComputed"
 			class="w-full text-stone-800 tracking-widest border-b border-b-stone-700 text-xl pl-2 pr-6 py-1 transition focus:outline-none focus:border-b-stone-700"
 		/>
-		<div class="-translate-x-full flex items-center">
+		<div class="absolute right-0 top-2 flex items-center">
 			<BaseIcon :type="icon" />
 		</div>
 	</div>

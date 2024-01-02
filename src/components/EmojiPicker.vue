@@ -2,6 +2,7 @@
 import data from '../app/emojis-data.json'
 import { computed, inject, ref } from 'vue'
 import BaseIcon from './BaseIcon.vue'
+import EmojiIcon from './icons/EmojiIcon.vue'
 
 const emojiClick = inject('emojiClick')
 
@@ -23,13 +24,7 @@ function handleShowEmoji() {
 </script>
 
 <template>
-	<img
-		@click="handleShowEmoji"
-		src="../app/images/emoji.svg"
-		alt="emoji"
-		width="20"
-		class="opacity-30 hover:opacity-100 transition cursor-pointer"
-	/>
+	<EmojiIcon @click="handleShowEmoji" />
 	<transition name="emoji">
 		<div class="emoji_picker" v-show="isShow">
 			<div
@@ -55,6 +50,7 @@ function handleShowEmoji() {
 <style scoped>
 .emoji_picker {
 	position: absolute;
+	z-index: 10;
 	width: 280px;
 	top: 0;
 	left: 0;

@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
 import { handleEditSkillIcon } from '../modules/generateForm.ts'
+import { setDevIcon } from '../utils/functions.ts'
 
 const props = defineProps({
 	icon: {
@@ -37,8 +38,8 @@ const classes = computed(() => {
 			ref="chooseIcon"
 			:alt="icon.name"
 			:src="chooseIcon"
-			width="60"
-			height="80"
+			width="40"
+			height="60"
 		/>
 		<div
 			v-show="isShowTooltip"

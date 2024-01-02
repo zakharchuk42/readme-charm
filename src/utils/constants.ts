@@ -18,6 +18,19 @@ export const ICONS_SYSTEM_CONTROL = 'system control'
 
 export const INPUT_ICON_EMOJI = 'emoji'
 export const INPUT_ICON_SEARCH = 'search'
+export const INPUT_ICON_GITHUB = 'github'
+
+export const EXAMPLE_GITHUB_WIDGETS = [
+	'https://github-readme-stats.vercel.app/api/top-langs?username=zakharchuk42&show_icons=true&locale=en&layout=compact',
+	'https://github-readme-stats.vercel.app/api?username=zakharchuk42&show_icons=true&locale=en',
+	'https://github-readme-streak-stats.herokuapp.com/?user=zakharchuk42&',
+]
+
+export const FIELDS_SOCIAL = {
+	label: '',
+	link: '',
+	placeholder: 'Something else',
+}
 
 export const FIELDS_MY_LINK = {
 	description: '',

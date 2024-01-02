@@ -76,8 +76,64 @@ export const formState = ref({
 		},
 	],
 	skills: [],
-	social: [],
-	gitHub: [],
+	socials: [
+		{
+			label: 'linkedin',
+			link: '',
+			placeholder: 'LinkedIn',
+		},
+		{
+			label: 'facebook',
+			link: '',
+			placeholder: 'Facebook',
+		},
+		{
+			label: 'telegram',
+			link: '',
+			placeholder: 'Telegram',
+		},
+		{
+			label: 'youtube',
+			link: '',
+			placeholder: 'YouTube',
+		},
+		{
+			label: 'twitter',
+			link: '',
+			placeholder: 'Twitter',
+		},
+		{
+			label: 'instagram',
+			link: '',
+			placeholder: 'Instagram',
+		},
+
+		{
+			label: 'leetcode',
+			link: '',
+			placeholder: 'LeetCode',
+		},
+	],
+	gitHub: {
+		name: '',
+		widgets: [
+			{
+				name: 'Most used languages',
+				link: '',
+				isChosen: false,
+			},
+			{
+				name: 'GitHub stats',
+				link: '',
+				isChosen: false,
+			},
+			{
+				name: 'Commit current streak',
+				link: '',
+				isChosen: false,
+			},
+		],
+	},
 	support: [],
 })
 
@@ -105,6 +161,17 @@ export function handleEditSkillIcon(icon, isAdd) {
 			(item) => item !== icon
 		)
 	}
+}
+
+export function addGitHubWidget(widgetOptions) {
+	formState.value.gitHub.widgets.forEach((item) => {
+		if (item.name === widgetOptions.name) {
+			item.isChosen = widgetOptions.isChoose
+		}
+	})
+
+	// mylog
+	console.log(formState.value.gitHub.widgets)
 }
 
 function getRandomDescription() {

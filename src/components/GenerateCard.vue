@@ -9,7 +9,7 @@ const props = defineProps({
 	},
 })
 
-const classes = ['flex gap-10 pb-4', props.col && 'flex-col']
+const classes = ['flex flex-wrap gap-10 pb-4', props.col && 'flex-col']
 </script>
 
 <template>

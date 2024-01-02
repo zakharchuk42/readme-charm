@@ -4,7 +4,6 @@ import { DEV_ICONS } from '../../utils/dev-icons.ts'
 import BaseInput from '../BaseInput.vue'
 import SkillsIcon from '../SkillsIcon.vue'
 import { computed, ref } from 'vue'
-import { formState } from '../../modules/generateForm.ts'
 import { INPUT_ICON_SEARCH } from '../../utils/constants.ts'
 
 const searchIconsInput = ref('')
@@ -23,9 +22,6 @@ const filteringSkills = computed(() => {
 </script>
 
 <template>
-	<div v-for="img in formState.skills">
-		{{ img }}
-	</div>
 	<div class="relative">
 		<div class="absolute w-1/3 right-0">
 			<BaseInput

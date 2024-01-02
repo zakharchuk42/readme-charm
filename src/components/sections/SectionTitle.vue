@@ -14,7 +14,7 @@ import { INPUT_ICON_EMOJI } from '../../utils/constants.ts'
 				:icon="INPUT_ICON_EMOJI"
 			/>
 		</div>
-		<div class="w-7/12">
+		<div class="w-6/12">
 			<BaseInput
 				v-model="formState.title.name"
 				placeholder="name"
