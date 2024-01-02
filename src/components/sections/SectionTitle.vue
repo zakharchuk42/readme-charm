@@ -9,11 +9,16 @@ import { formState } from '../../modules/generateForm.ts'
 		<div class="w-5/12">
 			<BaseInput
 				v-model="formState.title.default"
-				:defaultValue="formState.title.default"
+				:default-value="formState.title.default"
+				is-show-emoji
 			/>
 		</div>
 		<div class="w-7/12">
-			<BaseInput v-model="formState.title.name" placeholder="name" />
+			<BaseInput
+				v-model="formState.title.name"
+				placeholder="name"
+				is-show-emoji
+			/>
 		</div>
 	</GenerateCard>
 </template>

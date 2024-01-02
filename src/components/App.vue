@@ -6,7 +6,7 @@ import { currentPage, routes } from '../modules/router.ts'
 
 <template>
 	<TheHeader />
-	<main class="flex flex-1 flex-col max-w-screen-lg px-8 py-6">
+	<main class="flex flex-1 flex-col w-10/12 px-8 py-6">
 		<component :is="routes[currentPage]" />
 	</main>
 	<TheFooter />

@@ -8,7 +8,8 @@ import BaseInput from '../BaseInput.vue'
 	<GenerateCard title="Long story short">
 		<BaseInput
 			v-model="formState.description"
-			:defaultValue="formState.description"
+			:default-value="formState.description"
+			is-show-emoji
 		/>
 	</GenerateCard>
 </template>

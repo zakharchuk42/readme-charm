@@ -1,75 +1,47 @@
 <script lang="ts" setup>
-import {
-	addMyLinksFields,
-	deleteMyLinksFields,
-	formState,
-} from '../../modules/generateForm.ts'
-import GenerateCard from '../GenerateCard.vue'
+import { formState } from '../../modules/generateForm.ts'
 import BaseInput from '../BaseInput.vue'
-import BaseButton from '../BaseButton.vue'
+import GenerateCard from '../GenerateCard.vue'
+import { FIELDS_MY_LINK } from '../../utils/constants.ts'
+import EditFieldsButtons from '../EditFieldsButtons.vue'
 
-const inputs = formState.value.myLinks
+const myLinks = formState.value.myLinks
 </script>
 
 <template>
 	<GenerateCard title="My links" col>
-		<transition-group name="list">
+		<transition-group name="list-fields">
 			<div
-				v-for="input in inputs"
+				v-for="(myLink, index) in myLinks"
 				class="flex gap-10 pb-4"
-				:key="input.description"
+				:key="index"
 			>
 				<div class="w-6/12">
 					<BaseInput
-						v-model="input.description"
-						:defaultValue="input.description"
+						v-model="myLink.description"
+						:default-value="myLink.description"
+						is-show-emoji
 					/>
 				</div>
 				<div class="w-3/12">
 					<BaseInput
-						v-model="input.text"
-						:defaultValue="input.text"
+						v-model="myLink.text"
+						:default-value="myLink.text"
 						placeholder="name"
 					/>
 				</div>
 				<div class="w-3/12">
 					<BaseInput
-						v-model="input.link"
-						:defaultValue="input.link"
+						v-model="myLink.link"
+						:default-value="myLink.link"
 						placeholder="link"
 					/>
 				</div>
 			</div>
 		</transition-group>
-		<div class="flex gap-4 justify-end">
-			<BaseButton @click="addMyLinksFields">Add Fields</BaseButton>
-			<BaseButton @click="deleteMyLinksFields">Delete Fields</BaseButton>
-		</div>
+		<EditFieldsButtons
+			:fields-array="myLinks"
+			:fields-options="FIELDS_MY_LINK"
+		/>
 	</GenerateCard>
 </template>
-
-<style scoped>
-.list-enter-from {
-	opacity: 0;
-	transform: scale(0.6);
-}
-.list-enter-to {
-	opacity: 1;
-	transform: scale(1);
-}
-.list-enter-active {
-	transition: all 0.4s ease;
-}
-
-.list-leave-from {
-	opacity: 1;
-	transform: scale(1);
-}
-.list-leave-to {
-	opacity: 0;
-	transform: scale(0.6);
-}
-.list-leave-active {
-	transition: all 0.4s ease;
-}
-</style>
