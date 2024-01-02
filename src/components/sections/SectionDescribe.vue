@@ -2,6 +2,7 @@
 import { formState } from '../../modules/generateForm.ts'
 import GenerateCard from '../GenerateCard.vue'
 import BaseInput from '../BaseInput.vue'
+import { INPUT_ICON_EMOJI } from '../../utils/constants.ts'
 </script>
 
 <template>
@@ -9,7 +10,7 @@ import BaseInput from '../BaseInput.vue'
 		<BaseInput
 			v-model="formState.description"
 			:default-value="formState.description"
-			is-show-emoji
+			:icon="INPUT_ICON_EMOJI"
 		/>
 	</GenerateCard>
 </template>

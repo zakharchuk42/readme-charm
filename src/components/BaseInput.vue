@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import { computed, ref } from 'vue'
-import EmojiPicker from './EmojiPicker.vue'
+import { computed, provide, ref } from 'vue'
 import { getCaretPosition } from '../utils/functions.ts'
+import BaseIcon from './BaseIcon.vue'
 
 const props = defineProps({
 	modelValue: {
@@ -10,16 +10,16 @@ const props = defineProps({
 	placeholder: {
 		type: String,
 	},
-	isShowEmoji: {
-		type: Boolean,
+	icon: {
+		type: String,
 		required: false,
-		default: false,
+		default: '',
 	},
 })
 
 const emit = defineEmits(['update:modelValue'])
 
-const myInput = ref(null)
+const myInput = ref('')
 
 const writeableComputed = computed({
 	get() {
@@ -35,13 +35,14 @@ function emojiClick(emoji) {
 	const text = props.modelValue
 	const value =
 		text?.slice(0, position) + emoji + text?.slice(position, text?.length)
-
 	emit('update:modelValue', value)
 }
+
+provide('emojiClick', emojiClick)
 </script>
 
 <template>
-	<div class="relative w-full">
+	<div class="w-full flex">
 		<input
 			type="text"
 			ref="myInput"
@@ -49,8 +50,8 @@ function emojiClick(emoji) {
 			v-model="writeableComputed"
 			class="w-full text-stone-800 tracking-widest border-b border-b-stone-700 text-xl pl-2 pr-6 py-1 transition focus:outline-none focus:border-b-stone-700"
 		/>
-		<div v-show="isShowEmoji">
-			<EmojiPicker @emoji-click="emojiClick" />
+		<div class="-translate-x-full flex items-center">
+			<BaseIcon :type="icon" />
 		</div>
 	</div>
 </template>

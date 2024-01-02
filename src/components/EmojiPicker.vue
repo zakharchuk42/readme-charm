@@ -1,8 +1,9 @@
 <script setup>
 import data from '../app/emojis-data.json'
-import { computed, ref } from 'vue'
+import { computed, inject, ref } from 'vue'
+import BaseIcon from './BaseIcon.vue'
 
-const emit = defineEmits(['emojiClick'])
+const emojiClick = inject('emojiClick')
 
 const isShow = ref(false)
 
@@ -12,8 +13,8 @@ const category_emojis = computed(
 )
 
 function handleEmojiClick(emoji) {
-	emit('emojiClick', emoji)
 	handleShowEmoji()
+	emojiClick(emoji)
 }
 
 function handleShowEmoji() {
@@ -22,32 +23,29 @@ function handleShowEmoji() {
 </script>
 
 <template>
-	<div @click="handleShowEmoji" class="emoji_button">
-		<img
-			src="../app/images/emoji.svg"
-			alt="emoji"
-			width="20"
-			class="opacity-30 hover:opacity-100 transition"
-		/>
-	</div>
+	<img
+		@click="handleShowEmoji"
+		src="../app/images/emoji.svg"
+		alt="emoji"
+		width="20"
+		class="opacity-30 hover:opacity-100 transition cursor-pointer"
+	/>
 	<transition name="emoji">
 		<div class="emoji_picker" v-show="isShow">
-			<div class="picker_container">
-				<div
-					class="category"
-					v-for="category in categories"
-					:key="`category_${category}`"
-				>
-					<span>{{ category }}</span>
-					<div class="emojis_container">
-						<button
-							@click.prevent="handleEmojiClick(emoji)"
-							v-for="(emoji, index) in category_emojis(category)"
-							:key="`emoji_${index}`"
-						>
-							{{ emoji }}
-						</button>
-					</div>
+			<div
+				class="category"
+				v-for="category in categories"
+				:key="`category_${category}`"
+			>
+				<span>{{ category }}</span>
+				<div class="emojis_container">
+					<button
+						@click.prevent="handleEmojiClick(emoji)"
+						v-for="(emoji, index) in category_emojis(category)"
+						:key="`emoji_${index}`"
+					>
+						{{ emoji }}
+					</button>
 				</div>
 			</div>
 		</div>
@@ -55,41 +53,20 @@ function handleShowEmoji() {
 </template>
 
 <style scoped>
-.emoji_button {
-	position: absolute;
-	z-index: 4;
-	right: 0;
-	top: 10px;
-	cursor: pointer;
-}
 .emoji_picker {
 	position: absolute;
-	z-index: 5;
-	right: -4px;
-	top: 44px;
+	width: 280px;
+	top: 0;
+	left: 0;
+	transform: translate(-105%, 0);
 	display: flex;
 	flex-direction: column;
-	width: 20rem;
+	align-items: center;
 	height: 20rem;
-	max-width: 100%;
-	transform: translate(45%, -5px);
-}
-
-.emoji_picker {
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.0975);
-}
-
-.emoji_picker,
-.picker_container {
-	border-radius: 0.5rem;
-	background: white;
-}
-
-.picker_container {
-	position: relative;
-	padding: 1rem;
 	overflow: auto;
-	z-index: 1;
+	background: white;
+	padding: 10px;
 }
 
 .category {
@@ -102,6 +79,7 @@ function handleShowEmoji() {
 .emojis_container {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .category button {

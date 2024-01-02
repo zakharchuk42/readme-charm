@@ -2,7 +2,7 @@
 import { formState } from '../../modules/generateForm.ts'
 import BaseInput from '../BaseInput.vue'
 import GenerateCard from '../GenerateCard.vue'
-import { FIELDS_MY_LINK } from '../../utils/constants.ts'
+import { FIELDS_MY_LINK, INPUT_ICON_EMOJI } from '../../utils/constants.ts'
 import EditFieldsButtons from '../EditFieldsButtons.vue'
 
 const myLinks = formState.value.myLinks
@@ -20,7 +20,7 @@ const myLinks = formState.value.myLinks
 					<BaseInput
 						v-model="myLink.description"
 						:default-value="myLink.description"
-						is-show-emoji
+						:icon="INPUT_ICON_EMOJI"
 					/>
 				</div>
 				<div class="w-3/12">

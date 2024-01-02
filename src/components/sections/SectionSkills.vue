@@ -1,16 +1,17 @@
 <script lang="ts" setup>
 import GenerateCard from '../GenerateCard.vue'
-import { devIcons } from '../../utils/icons.ts'
+import { DEV_ICONS } from '../../utils/dev-icons.ts'
 import BaseInput from '../BaseInput.vue'
 import SkillsIcon from '../SkillsIcon.vue'
 import { computed, ref } from 'vue'
 import { formState } from '../../modules/generateForm.ts'
+import { INPUT_ICON_SEARCH } from '../../utils/constants.ts'
 
 const searchIconsInput = ref('')
 
 const filteringSkills = computed(() => {
-	return Object.keys(devIcons).reduce((total, key) => {
-		const filtered = devIcons[key].filter((icon) =>
+	return Object.keys(DEV_ICONS).reduce((total, key) => {
+		const filtered = DEV_ICONS[key].filter((icon) =>
 			icon.name.includes(searchIconsInput.value.toLowerCase())
 		)
 		return {
@@ -27,7 +28,11 @@ const filteringSkills = computed(() => {
 	</div>
 	<div class="relative">
 		<div class="absolute w-1/3 right-0">
-			<BaseInput v-model="searchIconsInput" placeholder="Search..." />
+			<BaseInput
+				v-model="searchIconsInput"
+				placeholder="Search..."
+				:icon="INPUT_ICON_SEARCH"
+			/>
 		</div>
 		<GenerateCard title="Skills" col>
 			<div

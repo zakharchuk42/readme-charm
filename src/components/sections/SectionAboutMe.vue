@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { FIELDS_ABOUT_ME } from '../../utils/constants.ts'
+import { FIELDS_ABOUT_ME, INPUT_ICON_EMOJI } from '../../utils/constants.ts'
 import { formState } from '../../modules/generateForm.ts'
 import BaseInput from '../BaseInput.vue'
 import GenerateCard from '../GenerateCard.vue'
@@ -20,7 +20,7 @@ const aboutMe = formState.value.aboutMe
 					<BaseInput
 						v-model="field.description"
 						:default-value="field.description"
-						is-show-emoji
+						:icon="INPUT_ICON_EMOJI"
 					/>
 				</div>
 				<div class="w-7/12">
@@ -28,7 +28,7 @@ const aboutMe = formState.value.aboutMe
 						v-model="field.text"
 						:default-value="field.text"
 						:placeholder="field.placeholder"
-						is-show-emoji
+						:icon="INPUT_ICON_EMOJI"
 					/>
 				</div>
 			</div>
