@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
+import { handleEditSkillIcon } from '../modules/generateForm.ts'
 
-defineProps({
+const props = defineProps({
 	icon: {
 		type: Object,
 		required: true,
@@ -10,9 +11,11 @@ defineProps({
 
 const isShowTooltip = ref(false)
 const isChoose = ref(false)
+const chooseIcon = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${props.icon.name}/${props.icon.name}-${props.icon.type}.svg`
 
 function handleChoose() {
 	isChoose.value = !isChoose.value
+	handleEditSkillIcon(chooseIcon, isChoose.value)
 }
 
 const classes = computed(() => {
@@ -31,8 +34,9 @@ const classes = computed(() => {
 		@mouseleave="isShowTooltip = !isShowTooltip"
 	>
 		<img
+			ref="chooseIcon"
 			:alt="icon.name"
-			:src="`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${icon.name}/${icon.name}-${icon.type}.svg`"
+			:src="chooseIcon"
 			width="60"
 			height="80"
 		/>

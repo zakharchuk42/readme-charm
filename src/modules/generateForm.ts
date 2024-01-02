@@ -97,6 +97,16 @@ export function deleteFields(array) {
 	array.pop()
 }
 
+export function handleEditSkillIcon(icon, isAdd) {
+	if (isAdd) {
+		formState.value.skills.push(icon)
+	} else {
+		formState.value.skills = formState.value.skills.filter(
+			(item) => item !== icon
+		)
+	}
+}
+
 function getRandomDescription() {
 	const descriptionArray = [
 		'Oh, something else?',
