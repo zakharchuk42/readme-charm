@@ -39,6 +39,7 @@ function isChoose(iconName) {
 			<div
 				v-for="(icons, title) in filteringSkills"
 				v-show="icons.length"
+				:key="title"
 			>
 				<h3 class="text-2xl font-bold text-stone-600 capitalize">
 					{{ title }}

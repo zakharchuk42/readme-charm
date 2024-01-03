@@ -171,14 +171,14 @@ export function stateForm() {
 	navigate(PAGE_RESULT)
 }
 
-export function addFields(array, options) {
+export function addFields(array: Array<string>, options: any) {
 	array.push({
 		...options,
 		description: getRandomDescription(),
 	})
 }
 
-export function deleteFields(array) {
+export function deleteFields(array: Array<string>) {
 	array.pop()
 }
 

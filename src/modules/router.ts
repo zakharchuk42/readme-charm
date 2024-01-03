@@ -5,10 +5,14 @@ import {
 	PAGE_HOW_IT_WORK,
 	PAGE_RESULT,
 } from '../utils/constants.ts'
-import TheGenerate from '../pages/TheGenerate.vue'
 import { isPageValid } from '../utils/validators.ts'
+// @ts-ignore
+import TheGenerate from '../pages/TheGenerate.vue'
+// @ts-ignore
 import TheResult from '../pages/TheResult.vue'
+// @ts-ignore
 import TheGenerateProject from '../pages/TheGenerateProject.vue'
+// @ts-ignore
 import TheHowWorks from '../pages/TheHowWorks.vue'
 
 export const currentPage = ref(normalizePathHash())

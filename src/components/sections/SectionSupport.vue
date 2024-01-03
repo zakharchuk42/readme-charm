@@ -8,7 +8,7 @@ const support = STATE_FORM.value.support
 
 <template>
 	<GenerateCard title="Support" col>
-		<div v-for="item in support">
+		<div v-for="item in support" :key="item.link">
 			<div class="flex gap-10">
 				<div class="flex gap-4 w-5/12">
 					<img :src="item.src" alt="Support links" width="60" />

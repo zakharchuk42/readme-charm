@@ -7,10 +7,10 @@ const markdown = resultGenerateReadme(STATE_FORM.value)
 </script>
 
 <template>
-	<TitlePage> Your Read<span class="text-red-500">Me</span> </TitlePage>
-
-	<textarea class="resize-none border h-screen" disabled>
-		{{ markdown }}
-	</textarea
-	>
+	<TitlePage>Your Read<span class="text-red-500">Me</span> </TitlePage>
+	<textarea
+		class="resize-none border h-screen p-4"
+		disabled
+		:value="markdown"
+	></textarea>
 </template>

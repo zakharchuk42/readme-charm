@@ -17,6 +17,10 @@ export const NAV_ITEMS = [
 		page: PAGE_HOW_IT_WORK,
 		name: 'How it works?',
 	},
+	{
+		page: PAGE_RESULT,
+		name: '',
+	},
 ]
 
 export const ICONS_FRONTEND = 'frontend'

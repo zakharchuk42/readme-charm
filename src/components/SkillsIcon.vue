@@ -23,7 +23,7 @@ const isChoose = ref(props.isChoose)
 
 function handleChoose() {
 	isChoose.value = !isChoose.value
-	handleEditSkillIcon(props.icon?.src, isChoose.value)
+	handleEditSkillIcon(props.icon?.src || '', isChoose?.value || false)
 }
 
 const classes = computed(() => {

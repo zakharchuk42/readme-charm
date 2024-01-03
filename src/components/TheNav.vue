@@ -6,7 +6,7 @@ import { NAV_ITEMS } from '../utils/constants.ts'
 <template>
 	<nav>
 		<ul class="flex flex-col gap-2">
-			<NavItem v-for="page in NAV_ITEMS" :key="page.link" :page="page" />
+			<NavItem v-for="page in NAV_ITEMS" :key="page.page" :page="page" />
 		</ul>
 	</nav>
 </template>

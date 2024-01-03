@@ -16,6 +16,11 @@ export interface IStateForm {
 	support: SupportType[]
 }
 
+export type WidgetsType = {
+	name: string
+	link: string
+}
+
 type MyLinksType = {
 	description: string
 	text: string
@@ -40,11 +45,6 @@ type SocialsType = {
 	textLink: string
 	link: string
 	placeholder: string
-}
-
-export type WidgetsType = {
-	name: string
-	link: string
 }
 
 type SupportType = {

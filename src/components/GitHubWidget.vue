@@ -1,10 +1,16 @@
 <script lang="ts" setup>
-import { computed, ref } from 'vue'
+import { computed, PropType, ref } from 'vue'
 import { EXAMPLE_GITHUB_WIDGETS } from '../utils/constants.ts'
+
+interface IGitHubWidget {
+	name: string
+	link: string
+	index: number
+}
 
 const props = defineProps({
 	widget: {
-		type: Object,
+		type: Object as PropType<IGitHubWidget>,
 		required: true,
 	},
 	isBlocked: {
@@ -21,7 +27,7 @@ function chooseWidget() {
 	isChoose.value = !isChoose.value
 
 	if (isChoose.value) {
-		emit('chooseWidget', props.widget.name)
+		emit('chooseWidget', props.widget?.name)
 	} else {
 		emit('chooseWidget', null)
 	}
