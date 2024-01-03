@@ -2,7 +2,6 @@
 import { STATE_FORM } from '../../modules/state-form.ts'
 import GenerateCard from '../GenerateCard.vue'
 import BaseInput from '../BaseInput.vue'
-import { INPUT_ICON_EMOJI } from '../../utils/constants.ts'
 </script>
 
 <template>
@@ -10,7 +9,7 @@ import { INPUT_ICON_EMOJI } from '../../utils/constants.ts'
 		<BaseInput
 			v-model="STATE_FORM.description"
 			:default-value="STATE_FORM.description"
-			:icon="INPUT_ICON_EMOJI"
+			emoji
 		/>
 	</GenerateCard>
 </template>

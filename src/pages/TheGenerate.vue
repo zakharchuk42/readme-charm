@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import BaseButton from '../components/BaseButton.vue'
 import SectionTitle from '../components/sections/SectionTitle.vue'
-import { stateForm } from '../modules/state-form.ts'
 import SectionDescribe from '../components/sections/SectionDescribe.vue'
 import SectionMyLink from '../components/sections/SectionMyLink.vue'
 import SectionAboutMe from '../components/sections/SectionAboutMe.vue'
@@ -11,6 +10,7 @@ import SectionSocial from '../components/sections/SectionSocial.vue'
 import SectionGitHubWidgets from '../components/sections/SectionGitHubWidgets.vue'
 import SectionSupport from '../components/sections/SectionSupport.vue'
 import { PAGE_RESULT } from '../utils/constants.ts'
+import { stateForm } from '../modules/state-form.ts'
 </script>
 
 <template>

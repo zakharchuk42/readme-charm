@@ -31,7 +31,7 @@ const choose = computed(() => {
 	return [
 		'border-4 border-white rounded-md cursor-pointer',
 		isChoose.value && '!border-emerald-600',
-		props.isBlocked && 'pointer-events-none',
+		props.isBlocked && 'pointer-events-none !border-red-600',
 	]
 })
 </script>
@@ -48,9 +48,6 @@ const choose = computed(() => {
 				:class="choose"
 				@click="chooseWidget"
 			/>
-			<p v-show="isBlocked" class="text-xl text-red-500">
-				Please, enter your GitHub username
-			</p>
 		</div>
 		<hr class="absolute -bottom-6 w-full" />
 	</div>

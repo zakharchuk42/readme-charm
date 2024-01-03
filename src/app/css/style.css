@@ -25,3 +25,28 @@
 .list-fields-leave-active {
 	transition: all 0.4s ease;
 }
+
+
+.emoji-enter-from {
+	opacity: 0;
+}
+
+.emoji-enter-to {
+	opacity: 1;
+}
+
+.emoji-enter-active {
+	transition: all 0.3s ease;
+}
+
+.emoji-leave-from {
+	opacity: 1;
+}
+
+.emoji-leave-to {
+	opacity: 0;
+}
+
+.emoji-leave-active {
+	transition: all 0.3s ease;
+}

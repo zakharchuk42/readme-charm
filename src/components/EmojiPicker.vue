@@ -2,7 +2,7 @@
 import data from '../app/emojis-data.json'
 import { computed, inject, ref } from 'vue'
 import BaseIcon from './BaseIcon.vue'
-import EmojiIcon from './icons/EmojiIcon.vue'
+import { INPUT_ICON_EMOJI } from '../utils/constants.ts'
 
 const emojiClick = inject('emojiClick')
 
@@ -24,7 +24,11 @@ function handleShowEmoji() {
 </script>
 
 <template>
-	<EmojiIcon @click="handleShowEmoji" />
+	<BaseIcon
+		:icon="INPUT_ICON_EMOJI"
+		@click="handleShowEmoji"
+		class="cursor-pointer"
+	/>
 	<transition name="emoji">
 		<div class="emoji_picker" v-show="isShow">
 			<div
@@ -84,29 +88,5 @@ function handleShowEmoji() {
 	border: none;
 	font-size: 1.75rem;
 	padding: 0;
-}
-
-.emoji-enter-from {
-	opacity: 0;
-}
-
-.emoji-enter-to {
-	opacity: 1;
-}
-
-.emoji-enter-active {
-	transition: all 0.3s ease;
-}
-
-.emoji-leave-from {
-	opacity: 1;
-}
-
-.emoji-leave-to {
-	opacity: 0;
-}
-
-.emoji-leave-active {
-	transition: all 0.3s ease;
 }
 </style>

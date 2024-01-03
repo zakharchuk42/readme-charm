@@ -4,10 +4,13 @@ import GenerateCard from '../GenerateCard.vue'
 import { INPUT_ICON_GITHUB } from '../../utils/constants.ts'
 import BaseInput from '../BaseInput.vue'
 import GitHubWidget from '../GitHubWidget.vue'
+import { computed } from 'vue'
 
 function chooseWidget(widgetOptions) {
 	addGitHubWidget(widgetOptions, STATE_FORM.value.gitHub.username)
 }
+
+const isBlocked = computed(() => STATE_FORM.value.gitHub.username.length === 0)
 </script>
 
 <template>
@@ -20,12 +23,15 @@ function chooseWidget(widgetOptions) {
 			/>
 		</div>
 		<GenerateCard title="GitHub Widgets" col>
+			<p v-show="isBlocked" class="text-xl text-red-500">
+				Please, enter your GitHub username
+			</p>
 			<GitHubWidget
 				v-for="(widget, index) in STATE_FORM.gitHub.widgets"
 				:key="index"
 				:widget="{ ...widget, index }"
 				@choose-widget="chooseWidget"
-				:is-blocked="STATE_FORM.gitHub.username.length === 0"
+				:is-blocked="isBlocked"
 			/>
 		</GenerateCard>
 	</div>

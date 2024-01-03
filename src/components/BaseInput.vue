@@ -2,6 +2,7 @@
 import { computed, provide, ref } from 'vue'
 import { getCaretPosition } from '../utils/functions.ts'
 import BaseIcon from './BaseIcon.vue'
+import EmojiPicker from './EmojiPicker.vue'
 
 const props = defineProps({
 	modelValue: {
@@ -14,6 +15,11 @@ const props = defineProps({
 		type: String,
 		required: false,
 		default: '',
+	},
+	emoji: {
+		type: Boolean,
+		required: false,
+		default: false,
 	},
 })
 
@@ -50,8 +56,11 @@ provide('emojiClick', emojiClick)
 			v-model="writeableComputed"
 			class="w-full text-stone-800 tracking-widest border-b border-b-stone-700 text-xl pl-2 pr-6 py-1 transition focus:outline-none focus:border-b-stone-700"
 		/>
-		<div class="absolute right-0 top-2 flex items-center">
-			<BaseIcon :type="icon" />
+		<div v-show="icon" class="absolute right-0 top-2 flex items-center">
+			<BaseIcon :icon="icon" />
+		</div>
+		<div v-show="emoji" class="absolute right-0 top-2 flex items-center">
+			<EmojiPicker />
 		</div>
 	</div>
 </template>

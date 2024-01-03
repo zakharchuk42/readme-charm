@@ -1,7 +1,7 @@
 export function resultGenerateReadme(data) {
 	return `
-# 🏠 ${data.title.default} ${data.title.name}
-## ${data.description}
+<p align="center"># 🏠 ${data.title.default} ${data.title.name}</p>
+### ${data.description}
 
 ${createMyLinks(data.myLinks)}
 ${createAboutMe(data.aboutMe)}
@@ -113,7 +113,7 @@ function createSupport(support) {
 	return isResultNotEmpty(result, '## 💸 Support')
 }
 
-function isResultNotEmpty(result, title) {
+function isResultNotEmpty(result: string, title: string) {
 	if (result) {
 		return `
 ${title}

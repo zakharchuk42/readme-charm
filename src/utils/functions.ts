@@ -1,7 +1,5 @@
-export function getCaretPosition(el) {
-	if (el.value) {
-		return el.value.selectionStart
-	}
-
-	return el.value.length
+export function getCaretPosition(el: {
+	value: { selectionStart: number; length: number }
+}): number {
+	return el.value.selectionStart
 }
