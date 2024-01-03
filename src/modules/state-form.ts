@@ -191,11 +191,12 @@ export function handleEditSkillIcon(icon, isAdd) {
 	}
 }
 
-export function addGitHubWidget(widgetOptions, username) {
+export function addGitHubWidget(widgetName, username) {
 	STATE_FORM.value.gitHub.widgets.forEach((item) => {
-		if (item.name === widgetOptions.name) {
-			item.isChosen = widgetOptions.isChoose
+		if (item.name === widgetName) {
 			item.link = addLinkGitHubWidget(item.name, username)
+		} else {
+			item.link = ''
 		}
 	})
 }

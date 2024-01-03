@@ -5,8 +5,6 @@ import { INPUT_ICON_GITHUB } from '../../utils/constants.ts'
 import BaseInput from '../BaseInput.vue'
 import GitHubWidget from '../GitHubWidget.vue'
 
-const { widgets } = STATE_FORM.value.gitHub
-
 function chooseWidget(widgetOptions) {
 	addGitHubWidget(widgetOptions, STATE_FORM.value.gitHub.username)
 }
@@ -23,10 +21,11 @@ function chooseWidget(widgetOptions) {
 		</div>
 		<GenerateCard title="GitHub Widgets" col>
 			<GitHubWidget
-				v-for="(widget, index) in widgets"
+				v-for="(widget, index) in STATE_FORM.gitHub.widgets"
 				:key="index"
 				:widget="{ ...widget, index }"
 				@choose-widget="chooseWidget"
+				:is-blocked="STATE_FORM.gitHub.username.length === 0"
 			/>
 		</GenerateCard>
 	</div>
