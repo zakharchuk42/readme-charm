@@ -7,15 +7,18 @@ const props = defineProps({
 		type: Object,
 		required: true,
 	},
+	isChoose: {
+		type: Boolean,
+		required: true,
+	},
 })
 
 const isShowTooltip = ref(false)
-const isChoose = ref(false)
-const chooseIcon = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${props.icon.name}/${props.icon.name}-${props.icon.type}.svg`
+const isChoose = ref(props.isChoose)
 
 function handleChoose() {
 	isChoose.value = !isChoose.value
-	handleEditSkillIcon(chooseIcon, isChoose.value)
+	handleEditSkillIcon(props.icon.src, isChoose.value)
 }
 
 const classes = computed(() => {
@@ -36,7 +39,7 @@ const classes = computed(() => {
 		<img
 			ref="chooseIcon"
 			:alt="icon.name"
-			:src="chooseIcon"
+			:src="icon.src"
 			width="40"
 			height="60"
 		/>

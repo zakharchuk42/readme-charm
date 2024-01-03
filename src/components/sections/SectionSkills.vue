@@ -5,6 +5,7 @@ import BaseInput from '../BaseInput.vue'
 import SkillsIcon from '../SkillsIcon.vue'
 import { computed, ref } from 'vue'
 import { INPUT_ICON_SEARCH } from '../../utils/constants.ts'
+import { STATE_FORM } from '../../modules/state-form.ts'
 
 const searchIconsInput = ref('')
 
@@ -19,6 +20,10 @@ const filteringSkills = computed(() => {
 		}
 	}, {})
 })
+
+function isChoose(iconName) {
+	return STATE_FORM.value.skills.includes(iconName)
+}
 </script>
 
 <template>
@@ -44,6 +49,7 @@ const filteringSkills = computed(() => {
 						v-for="icon in icons"
 						:key="icon.name"
 						:icon="icon"
+						:is-choose="isChoose(icon.src)"
 					/>
 				</div>
 			</div>

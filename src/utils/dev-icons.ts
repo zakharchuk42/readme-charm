@@ -12,504 +12,511 @@ export const DEV_ICONS = {
 	[ICONS_FRONTEND]: [
 		{
 			name: 'html5',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
 		},
 		{
 			name: 'css3',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
 		},
 		{
 			name: 'sass',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg',
 		},
 		{
 			name: 'bootstrap',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
 		},
 		{
 			name: 'tailwindcss',
-			type: 'plain',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
 		},
 		{
 			name: 'materialui',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg',
 		},
 		{
 			name: 'javascript',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
 		},
 		{
 			name: 'typescript',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
 		},
 		{
 			name: 'react',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
 		},
 		{
 			name: 'redux',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg',
 		},
 		{
 			name: 'nextjs',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
 		},
 		{
 			name: 'vuejs',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
 		},
 		{
 			name: 'vuetify',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuetify/vuetify-original.svg',
 		},
 		{
 			name: 'nuxtjs',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg',
 		},
 		{
 			name: 'angularjs',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',
 		},
 		{
 			name: 'svelte',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg',
 		},
-		{ name: 'gulp', type: 'plain' },
+		{
+			name: 'gulp',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gulp/gulp-plain.svg',
+		},
 		{
 			name: 'webpack',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg',
 		},
 		{
 			name: 'd3js',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg',
 		},
 		{
 			name: 'eslint',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg',
 		},
 		{
 			name: 'wordpress',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg',
 		},
 		{
 			name: 'eleventy',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eleventy/eleventy-original.svg',
 		},
 		{
 			name: 'babel',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.svg',
 		},
 		{
 			name: 'gatsby',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-original.svg',
 		},
 		{
 			name: 'django',
-			type: 'plain',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg',
 		},
 		{
 			name: 'markdown',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg',
 		},
 		{
 			name: 'backbonejs',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/backbonejs/backbonejs-original.svg',
 		},
 		{
 			name: 'hugo',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hugo/hugo-original.svg',
 		},
 		{
 			name: 'threejs',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg',
 		},
 		{
 			name: 'magento',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/magento/magento-original.svg',
 		},
 	],
 	[ICONS_BACKEND]: [
 		{
 			name: 'nodejs',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
 		},
 		{
 			name: 'express',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
 		},
 		{
 			name: 'graphql',
-			type: 'plain',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg',
 		},
 		{
 			name: 'apachekafka',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg',
 		},
 		{
 			name: 'r',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg',
 		},
 		{
 			name: 'rails',
-
-			type: 'plain',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg',
 		},
 		{
 			name: 'nestjs',
-			type: 'plain',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg',
 		},
 		{
 			name: 'nginx',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg',
 		},
 		{
 			name: 'adonisjs',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/adonisjs/adonisjs-original.svg',
 		},
 		{
 			name: 'pycharm',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg',
 		},
 		{
 			name: 'pytorch',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg',
 		},
 		{
 			name: 'pandas',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg',
 		},
 		{
 			name: 'meteor',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/meteor/meteor-original.svg',
 		},
 		{
 			name: 'apache',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg',
 		},
 		{
 			name: 'drupal',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/drupal/drupal-original.svg',
 		},
 		{
 			name: 'laravel',
-			type: 'plain',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg',
 		},
 		{
 			name: 'flask',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg',
 		},
 		{
 			name: 'kubernetes',
-			type: 'plain',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg',
 		},
 		{
 			name: 'jenkins',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg',
 		},
 		{
 			name: 'composer',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg',
 		},
 		{
 			name: 'docker',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
 		},
 		{
 			name: 'circleci',
-			type: 'plain',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/circleci/circleci-plain.svg',
 		},
 		{
 			name: 'appwrite',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/appwrite/appwrite-original.svg',
 		},
 		{
 			name: 'bash',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg',
 		},
 		{
 			name: 'azure',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg',
 		},
 		{
 			name: 'socketio',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg',
 		},
 		{
 			name: 'firebase',
-			type: 'plain',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
 		},
 		{
 			name: 'cakephp',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cakephp/cakephp-original.svg',
 		},
 		{
 			name: 'mongodb',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
 		},
 		{
 			name: 'mysql',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
 		},
 		{
 			name: 'sqlalchemy',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg',
 		},
 		{
 			name: 'sqlite',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg',
 		},
 		{
 			name: 'postgresql',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
 		},
 		{
 			name: 'redis',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg',
 		},
 		{
 			name: 'oracle',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg',
 		},
 		{
 			name: 'rocksdb',
-			type: 'plain',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rocksdb/rocksdb-plain.svg',
 		},
 		{
 			name: 'couchdb',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/couchdb/couchdb-original.svg',
 		},
 	],
 	[ICONS_TESTING]: [
-		{ name: 'jest', type: 'plain' },
+		{
+			name: 'jest',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
+		},
 		{
 			name: 'mocha',
-
-			type: 'plain',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mocha/mocha-plain.svg',
 		},
 		{
 			name: 'selenium',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg',
 		},
 		{
 			name: 'karma',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/karma/karma-original.svg',
 		},
 		{
 			name: 'jasmine',
-			type: 'plain',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jasmine/jasmine-plain.svg',
 		},
 		{
 			name: 'pytest',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original.svg',
 		},
 	],
 	[ICONS_PROGRAMMING]: [
 		{
 			name: 'c',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg',
 		},
 		{
 			name: 'raspberrypi',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg',
 		},
 		{
 			name: 'cplusplus',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg',
 		},
 		{
 			name: 'csharp',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg',
 		},
 		{
 			name: 'go',
-			type: 'original-wordmark',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg',
 		},
 		{
 			name: 'objectivec',
-			type: 'plain',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/objectivec/objectivec-plain.svg',
 		},
 		{
 			name: 'java',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
 		},
-		{ name: 'rust', type: 'plain' },
+		{
+			name: 'rust',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg',
+		},
 		{
 			name: 'elixir',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elixir/elixir-original.svg',
 		},
 		{
 			name: 'php',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
 		},
 		{
 			name: 'perl',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg',
 		},
 		{
 			name: 'ruby',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg',
 		},
 		{
 			name: 'scala',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg',
 		},
 		{
 			name: 'haskell',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/haskell/haskell-original.svg',
 		},
 		{
 			name: 'erlang',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/erlang/erlang-original.svg',
 		},
 		{
 			name: 'python',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
 		},
 		{
 			name: 'numpy',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg',
 		},
 		{
 			name: 'swift',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg',
 		},
 		{
 			name: 'clojure',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/clojure/clojure-original.svg',
 		},
 		{
 			name: 'dotnetcore',
-			type: 'plain',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-plain.svg',
 		},
 	],
 	[ICONS_MOBILE]: [
 		{
 			name: 'android',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg',
 		},
 		{
 			name: 'dart',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg',
 		},
 		{
 			name: 'androidstudio',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg',
 		},
 		{
 			name: 'kotlin',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg',
 		},
 		{
 			name: 'xamarin',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xamarin/xamarin-original.svg',
 		},
 		{
 			name: 'flutter',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg',
 		},
 		{
 			name: 'ionic',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg',
 		},
 	],
 	[ICONS_SOFTWARE]: [
 		{
 			name: 'xcode',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg',
 		},
 		{
 			name: 'aftereffects',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg',
 		},
 		{
 			name: 'photoshop',
-			type: 'plain',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg',
 		},
 		{
 			name: 'filezilla',
-			type: 'plain',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/filezilla/filezilla-plain.svg',
 		},
 		{
 			name: 'figma',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
 		},
 		{
 			name: 'canva',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg',
 		},
 		{
 			name: 'illustrator',
-			type: 'plain',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg',
 		},
 		{
 			name: 'phpstorm',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/phpstorm/phpstorm-original.svg',
 		},
 		{
 			name: 'webstorm',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webstorm/webstorm-original.svg',
 		},
 		{
 			name: 'matlab',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg',
 		},
 		{
 			name: 'sketch',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sketch/sketch-original.svg',
 		},
 		{
 			name: 'blender',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg',
 		},
 		{
 			name: 'unity',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg',
 		},
 		{
 			name: 'slack',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg',
 		},
 		{
 			name: 'jetbrains',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg',
 		},
 		{
 			name: 'vscode',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
 		},
 	],
 	[ICONS_SYSTEM_CONTROL]: [
 		{
 			name: 'git',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
 		},
 		{
 			name: 'github',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
 		},
 		{
 			name: 'gitlab',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg',
 		},
 		{
 			name: 'bitbucket',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg',
 		},
 		{
 			name: 'jira',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg',
 		},
 		{
 			name: 'confluence',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg',
 		},
 		{
 			name: 'trello',
-			type: 'plain',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg',
 		},
 		{
 			name: 'storybook',
-			type: 'original',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg',
 		},
 	],
 }
