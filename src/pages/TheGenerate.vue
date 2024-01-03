@@ -11,9 +11,13 @@ import SectionGitHubWidgets from '../components/sections/SectionGitHubWidgets.vu
 import SectionSupport from '../components/sections/SectionSupport.vue'
 import { PAGE_RESULT } from '../utils/constants.ts'
 import { stateForm } from '../modules/state-form.ts'
+import TitlePage from '../components/TitlePage.vue'
 </script>
 
 <template>
+	<TitlePage>
+		Generate <span class="text-red-500">profile</span> ReadMe
+	</TitlePage>
 	<div class="flex flex-col w-full tracking-widest">
 		<SectionTitle />
 		<SectionDescribe />
