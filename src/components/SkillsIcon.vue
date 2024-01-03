@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
-import { handleEditSkillIcon } from '../modules/generateForm.ts'
-import { setDevIcon } from '../utils/functions.ts'
+import { handleEditSkillIcon } from '../modules/state-form.ts'
 
 const props = defineProps({
 	icon: {

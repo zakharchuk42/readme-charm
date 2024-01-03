@@ -26,7 +26,7 @@ const writeableComputed = computed({
 		return props.modelValue
 	},
 	set(value) {
-		emit('update:modelValue', value)
+		emit('update:modelValue', value.trim())
 	},
 })
 

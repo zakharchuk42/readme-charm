@@ -15,13 +15,12 @@ function chooseWidget() {
 	isChoose.value = !isChoose.value
 	emit('chooseWidget', {
 		name: props.widget.name,
-		isChoose: isChoose.value,
 	})
 }
 
 const choose = computed(() => {
 	return [
-		'border-4 border-white rounded cursor-pointer',
+		'border-4 border-white rounded-md cursor-pointer',
 		isChoose.value && '!border-emerald-600',
 	]
 })

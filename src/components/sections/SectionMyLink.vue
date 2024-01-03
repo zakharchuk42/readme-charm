@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import { formState } from '../../modules/generateForm.ts'
+import { STATE_FORM } from '../../modules/state-form.ts'
 import BaseInput from '../BaseInput.vue'
 import GenerateCard from '../GenerateCard.vue'
 import { FIELDS_MY_LINK, INPUT_ICON_EMOJI } from '../../utils/constants.ts'
 import EditFieldsButtons from '../EditFieldsButtons.vue'
 
-const myLinks = formState.value.myLinks
+const myLinks = STATE_FORM.value.myLinks
 </script>
 
 <template>

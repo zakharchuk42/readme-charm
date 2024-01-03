@@ -20,10 +20,16 @@ export const INPUT_ICON_EMOJI = 'emoji'
 export const INPUT_ICON_SEARCH = 'search'
 export const INPUT_ICON_GITHUB = 'github'
 
+export const GITHUB_WIDGET_MOST_USED = 'Most used languages'
+export const GITHUB_WIDGET_STATS = 'GitHub stats'
+export const GITHUB_WIDGET_STREAK = 'Commit current streak'
+export const GITHUB_WIDGET_TROPHY = 'GitHub Trophy'
+
 export const EXAMPLE_GITHUB_WIDGETS = [
-	'https://github-readme-stats.vercel.app/api/top-langs?username=zakharchuk42&show_icons=true&locale=en&layout=compact',
-	'https://github-readme-stats.vercel.app/api?username=zakharchuk42&show_icons=true&locale=en',
-	'https://github-readme-streak-stats.herokuapp.com/?user=zakharchuk42&',
+	'/readme-charm/src/app/images/most-used.png',
+	'/readme-charm/src/app/images/stats.png',
+	'/readme-charm/src/app/images/commit-streak.png',
+	'/readme-charm/src/app/images/trophy.png',
 ]
 
 export const FIELDS_SOCIAL = {

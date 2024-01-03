@@ -1,12 +1,20 @@
 import { ref } from 'vue'
+import {
+	GITHUB_WIDGET_MOST_USED,
+	GITHUB_WIDGET_STATS,
+	GITHUB_WIDGET_STREAK,
+	GITHUB_WIDGET_TROPHY,
+	PAGE_RESULT,
+} from '../utils/constants.ts'
+import { navigate } from './router.ts'
 
-export const formState = ref({
+export const STATE_FORM = ref({
 	title: {
 		default: 'Hello👋, my name is',
 		name: '',
 	},
 	description:
-		'📃 I have been working with frontend since 2019, and I love cats 😸',
+		'I have been working with frontend since 2019, and I love cats 😸',
 	myLinks: [
 		{
 			description: '🎨 My latest project is',
@@ -79,67 +87,87 @@ export const formState = ref({
 	socials: [
 		{
 			label: 'linkedin',
+			textLink: '',
 			link: '',
-			placeholder: 'LinkedIn',
+			placeholder: 'https://www.linkedin.com/in/username/',
 		},
 		{
 			label: 'facebook',
+			textLink: '',
 			link: '',
-			placeholder: 'Facebook',
+			placeholder: 'https://www.facebook.com/username',
 		},
 		{
 			label: 'telegram',
+			textLink: '',
 			link: '',
-			placeholder: 'Telegram',
+			placeholder: 'https://t.me/username',
 		},
 		{
 			label: 'youtube',
+			textLink: '',
 			link: '',
-			placeholder: 'YouTube',
+			placeholder: 'https://www.youtube.com/@username',
 		},
 		{
 			label: 'twitter',
+			textLink: '',
 			link: '',
-			placeholder: 'Twitter',
+			placeholder: 'https://twitter.com/username',
 		},
 		{
 			label: 'instagram',
+			textLink: '',
 			link: '',
-			placeholder: 'Instagram',
+			placeholder: 'https://www.instagram.com/username/',
 		},
 
 		{
 			label: 'leetcode',
+			textLink: '',
 			link: '',
-			placeholder: 'LeetCode',
+			placeholder: 'https://leetcode.com/username/',
 		},
 	],
 	gitHub: {
-		name: '',
+		username: '',
 		widgets: [
 			{
-				name: 'Most used languages',
+				name: GITHUB_WIDGET_MOST_USED,
 				link: '',
-				isChosen: false,
 			},
 			{
-				name: 'GitHub stats',
+				name: GITHUB_WIDGET_STATS,
 				link: '',
-				isChosen: false,
 			},
 			{
-				name: 'Commit current streak',
+				name: GITHUB_WIDGET_STREAK,
 				link: '',
-				isChosen: false,
+			},
+			{
+				name: GITHUB_WIDGET_TROPHY,
+				link: '',
 			},
 		],
 	},
-	support: [],
+	support: [
+		{
+			src: '/readme-charm/src/app/images/buy_me_coffee.svg',
+			link: '',
+			textLink: '',
+			placeholder: 'https://www.buymeacoffee.com/username',
+		},
+		{
+			src: '/readme-charm/src/app/images/donatello.png',
+			link: '',
+			textLink: '',
+			placeholder: 'https://donatello.to/username',
+		},
+	],
 })
 
-export function generateForm() {
-	// mylog
-	console.log(formState.value)
+export function stateForm() {
+	navigate(PAGE_RESULT)
 }
 
 export function addFields(array, options) {
@@ -155,23 +183,36 @@ export function deleteFields(array) {
 
 export function handleEditSkillIcon(icon, isAdd) {
 	if (isAdd) {
-		formState.value.skills.push(icon)
+		STATE_FORM.value.skills.push(icon)
 	} else {
-		formState.value.skills = formState.value.skills.filter(
+		STATE_FORM.value.skills = STATE_FORM.value.skills.filter(
 			(item) => item !== icon
 		)
 	}
 }
 
-export function addGitHubWidget(widgetOptions) {
-	formState.value.gitHub.widgets.forEach((item) => {
+export function addGitHubWidget(widgetOptions, username) {
+	STATE_FORM.value.gitHub.widgets.forEach((item) => {
 		if (item.name === widgetOptions.name) {
 			item.isChosen = widgetOptions.isChoose
+			item.link = addLinkGitHubWidget(item.name, username)
 		}
 	})
+}
 
-	// mylog
-	console.log(formState.value.gitHub.widgets)
+function addLinkGitHubWidget(name, username) {
+	switch (name) {
+		case GITHUB_WIDGET_MOST_USED:
+			return `https://github-readme-stats.vercel.app/api/top-langs?username=${username}&show_icons=true&locale=en&layout=compact`
+		case GITHUB_WIDGET_STATS:
+			return `https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&locale=en`
+		case GITHUB_WIDGET_STREAK:
+			return `https://github-readme-streak-stats.herokuapp.com/?user=${username}&`
+		case GITHUB_WIDGET_TROPHY:
+			return `https://github-profile-trophy.vercel.app/?username=${username}`
+		default:
+			return ''
+	}
 }
 
 function getRandomDescription() {

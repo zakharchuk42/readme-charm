@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import { FIELDS_ABOUT_ME, INPUT_ICON_EMOJI } from '../../utils/constants.ts'
-import { formState } from '../../modules/generateForm.ts'
+import { STATE_FORM } from '../../modules/state-form.ts'
 import BaseInput from '../BaseInput.vue'
 import GenerateCard from '../GenerateCard.vue'
 import EditFieldsButtons from '../EditFieldsButtons.vue'
 
-const aboutMe = formState.value.aboutMe
+const aboutMe = STATE_FORM.value.aboutMe
 </script>
 
 <template>

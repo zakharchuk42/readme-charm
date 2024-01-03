@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import BaseButton from './BaseButton.vue'
-import { addFields, deleteFields } from '../modules/generateForm.ts'
+import { addFields, deleteFields } from '../modules/state-form.ts'
 
 defineProps({
 	fieldsArray: {
@@ -17,10 +17,10 @@ defineProps({
 <template>
 	<div class="flex gap-4 justify-end">
 		<BaseButton @click="addFields(fieldsArray, fieldsOptions)"
-			>Add Fields</BaseButton
+			><span class="text-red-500">Add</span> Fields</BaseButton
 		>
 		<BaseButton @click="deleteFields(fieldsArray)"
-			>Delete Fields</BaseButton
+			><span class="text-red-500">Del</span>ete Fields</BaseButton
 		>
 	</div>
 </template>
