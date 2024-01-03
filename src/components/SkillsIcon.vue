@@ -1,10 +1,15 @@
 <script lang="ts" setup>
-import { computed, ref } from 'vue'
+import { computed, PropType, ref } from 'vue'
 import { handleEditSkillIcon } from '../modules/state-form.ts'
+
+interface ISkillsIcon {
+	name: string
+	src: string
+}
 
 const props = defineProps({
 	icon: {
-		type: Object,
+		type: Object as PropType<ISkillsIcon>,
 		required: true,
 	},
 	isChoose: {
@@ -18,7 +23,7 @@ const isChoose = ref(props.isChoose)
 
 function handleChoose() {
 	isChoose.value = !isChoose.value
-	handleEditSkillIcon(props.icon.src, isChoose.value)
+	handleEditSkillIcon(props.icon?.src, isChoose.value)
 }
 
 const classes = computed(() => {

@@ -2,11 +2,16 @@
 import { ICONS_LINK } from '../utils/constants.ts'
 import BaseIcon from './BaseIcon.vue'
 import { currentPage, navigate } from '../modules/router.ts'
-import { computed } from 'vue'
+import { computed, PropType } from 'vue'
+
+interface INavItem {
+	page: string
+	name: string
+}
 
 const props = defineProps({
 	page: {
-		type: Object,
+		type: Object as PropType<INavItem>,
 		required: true,
 	},
 })

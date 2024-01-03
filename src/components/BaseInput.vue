@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { computed, provide, ref } from 'vue'
+import { computed, provide, Ref, ref } from 'vue'
 import { getCaretPosition } from '../utils/functions.ts'
 import BaseIcon from './BaseIcon.vue'
 import EmojiPicker from './EmojiPicker.vue'
@@ -25,7 +25,7 @@ const props = defineProps({
 
 const emit = defineEmits(['update:modelValue'])
 
-const myInput = ref('')
+const myInput: Ref<string> = ref('')
 
 const writeableComputed = computed({
 	get() {

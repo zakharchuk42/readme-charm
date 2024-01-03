@@ -7,7 +7,7 @@ import TheLogo from './TheLogo.vue'
 		class="w-full flex justify-between items-center p-8 border-b shadow"
 	>
 		<TheLogo />
-		<div class="flex gap-2">
+		<div class="flex gap-6">
 			<img
 				alt="gitHub"
 				width="40"

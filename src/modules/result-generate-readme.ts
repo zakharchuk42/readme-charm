@@ -1,4 +1,6 @@
-export function resultGenerateReadme(data) {
+import { IStateForm, WidgetsType } from '../utils/types.ts'
+
+export function resultGenerateReadme(data: IStateForm) {
 	return `
 <p align="center"># 🏠 ${data.title.default} ${data.title.name}</p>
 ### ${data.description}
@@ -15,7 +17,7 @@ ${createSupport(data.support)}
 `
 }
 
-function createMyLinks(myLinks) {
+function createMyLinks(myLinks: IStateForm['myLinks']) {
 	let result = ``
 
 	myLinks.forEach((link) => {
@@ -28,7 +30,7 @@ function createMyLinks(myLinks) {
 	return isResultNotEmpty(result, '## 📲 My Links')
 }
 
-function createAboutMe(aboutMe) {
+function createAboutMe(aboutMe: IStateForm['aboutMe']) {
 	let result = ``
 
 	aboutMe.forEach((item) => {
@@ -41,7 +43,7 @@ function createAboutMe(aboutMe) {
 	return isResultNotEmpty(result, '## 💡 About Me')
 }
 
-function createWorkExp(workExp) {
+function createWorkExp(workExp: IStateForm['workExperience']) {
 	let result = ``
 
 	workExp.forEach((work) => {
@@ -63,7 +65,7 @@ ${result}
 	}
 }
 
-function createMySkills(skills) {
+function createMySkills(skills: IStateForm['skills']) {
 	let result = ``
 
 	skills.forEach((skill) => {
@@ -74,7 +76,7 @@ function createMySkills(skills) {
 	return isResultNotEmpty(result, '## 🔨 Skills')
 }
 
-function createSocials(socials) {
+function createSocials(socials: IStateForm['socials']) {
 	let result = ``
 
 	socials.forEach((item) => {
@@ -87,7 +89,7 @@ function createSocials(socials) {
 	return isResultNotEmpty(result, '## 📰 Social links')
 }
 
-function createGitHubWidgets(widgets) {
+function createGitHubWidgets(widgets: WidgetsType[]) {
 	let result = ``
 
 	widgets.forEach((widget) => {
@@ -100,7 +102,7 @@ function createGitHubWidgets(widgets) {
 	return isResultNotEmpty(result, '## 👾 GitHub widgets')
 }
 
-function createSupport(support) {
+function createSupport(support: IStateForm['support']) {
 	let result = ``
 
 	support.forEach((item) => {

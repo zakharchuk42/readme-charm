@@ -1,4 +1,4 @@
-import { ref } from 'vue'
+import { Ref, ref } from 'vue'
 import {
 	GITHUB_WIDGET_MOST_USED,
 	GITHUB_WIDGET_STATS,
@@ -7,8 +7,9 @@ import {
 	PAGE_RESULT,
 } from '../utils/constants.ts'
 import { navigate } from './router.ts'
+import { IStateForm } from '../utils/types.ts'
 
-export const STATE_FORM = ref({
+export const STATE_FORM: Ref<IStateForm> = ref({
 	title: {
 		default: 'Hello👋, my name is',
 		name: '',
@@ -181,7 +182,7 @@ export function deleteFields(array) {
 	array.pop()
 }
 
-export function handleEditSkillIcon(icon, isAdd) {
+export function handleEditSkillIcon(icon: string, isAdd: boolean) {
 	if (isAdd) {
 		STATE_FORM.value.skills.push(icon)
 	} else {
@@ -191,7 +192,7 @@ export function handleEditSkillIcon(icon, isAdd) {
 	}
 }
 
-export function addGitHubWidget(widgetName, username) {
+export function addGitHubWidget(widgetName: string, username: string) {
 	STATE_FORM.value.gitHub.widgets.forEach((item) => {
 		if (item.name === widgetName) {
 			item.link = addLinkGitHubWidget(item.name, username)
@@ -201,7 +202,7 @@ export function addGitHubWidget(widgetName, username) {
 	})
 }
 
-function addLinkGitHubWidget(name, username) {
+function addLinkGitHubWidget(name: string, username: string) {
 	switch (name) {
 		case GITHUB_WIDGET_MOST_USED:
 			return `https://github-readme-stats.vercel.app/api/top-langs?username=${username}&show_icons=true&locale=en&layout=compact`

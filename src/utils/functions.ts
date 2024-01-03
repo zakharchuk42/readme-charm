@@ -1,5 +1,5 @@
-export function getCaretPosition(el: {
-	value: { selectionStart: number; length: number }
-}): number {
+import { Ref } from 'vue'
+
+export function getCaretPosition(el: Ref): number {
 	return el.value.selectionStart
 }
