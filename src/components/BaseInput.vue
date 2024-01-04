@@ -7,6 +7,7 @@ import EmojiPicker from './EmojiPicker.vue'
 const props = defineProps({
 	modelValue: {
 		type: String,
+		required: true,
 	},
 	placeholder: {
 		type: String,
@@ -36,14 +37,13 @@ const writeableComputed = computed({
 	},
 })
 
-function emojiClick(emoji) {
+function emojiClick(emoji: string) {
 	const position = getCaretPosition(myInput)
 	const text = props.modelValue
 	const value =
 		text?.slice(0, position) + emoji + text?.slice(position, text?.length)
 	emit('update:modelValue', value)
 }
-
 provide('emojiClick', emojiClick)
 </script>
 

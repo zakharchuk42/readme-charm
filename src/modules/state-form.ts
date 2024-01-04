@@ -173,7 +173,7 @@ export function resetForm() {
 
 export function copyMarkdown() {
 	const textToCopy = resultGenerateReadme(STATE_FORM.value)
-	let textArea = document.createElement('textarea')
+	const textArea = document.createElement('textarea')
 	document.body.appendChild(textArea)
 	textArea.value = textToCopy
 	textArea.select()
@@ -181,14 +181,14 @@ export function copyMarkdown() {
 	document.body.removeChild(textArea)
 }
 
-export function addFields(array: Array<string>, options: any) {
+export function addFields(array: any, options: any) {
 	array.push({
 		...options,
 		description: getRandomDescription(),
 	})
 }
 
-export function deleteFields(array: Array<string>) {
+export function deleteFields(array: any) {
 	array.pop()
 }
 
@@ -227,7 +227,7 @@ function addLinkGitHubWidget(name: string, username: string) {
 	}
 }
 
-function getRandomDescription() {
+function getRandomDescription(): string {
 	const descriptionArray = [
 		'Oh, something else?',
 		'Great! You have a lot interested information',

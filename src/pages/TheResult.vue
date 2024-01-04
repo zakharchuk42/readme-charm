@@ -9,7 +9,7 @@ const markdown = resultGenerateReadme(STATE_FORM.value)
 <template>
 	<TitlePage>Your Read<span class="text-red-500">Me</span> </TitlePage>
 	<textarea
-		class="resize-none border h-screen p-4"
+		class="resize-none border h-full p-4"
 		disabled
 		:value="markdown"
 	></textarea>

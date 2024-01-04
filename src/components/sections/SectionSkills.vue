@@ -1,18 +1,19 @@
 <script lang="ts" setup>
-import GenerateCard from '../GenerateCard.vue'
-import { DEV_ICONS } from '../../utils/dev-icons.ts'
+import Card from '../Card.vue'
+import { DEV_ICONS, IDevIcons } from '../../utils/dev-icons.ts'
 import BaseInput from '../BaseInput.vue'
 import SkillsIcon from '../SkillsIcon.vue'
-import { computed, ref } from 'vue'
+import { computed, Ref, ref } from 'vue'
 import { INPUT_ICON_SEARCH } from '../../utils/constants.ts'
 import { STATE_FORM } from '../../modules/state-form.ts'
 
 const searchIconsInput = ref('')
 
-const filteringSkills = computed(() => {
+const filteringSkills: Ref<IDevIcons> = computed(() => {
 	return Object.keys(DEV_ICONS).reduce((total, key) => {
-		const filtered = DEV_ICONS[key].filter((icon) =>
-			icon.name.includes(searchIconsInput.value.toLowerCase())
+		const filtered = DEV_ICONS[key].filter(
+			(icon: { name: string; src: string }) =>
+				icon.name.includes(searchIconsInput.value.toLowerCase())
 		)
 		return {
 			...total,
@@ -21,7 +22,7 @@ const filteringSkills = computed(() => {
 	}, {})
 })
 
-function isChoose(iconName) {
+function isChoose(iconName: string) {
 	return STATE_FORM.value.skills.includes(iconName)
 }
 </script>
@@ -35,7 +36,7 @@ function isChoose(iconName) {
 				:icon="INPUT_ICON_SEARCH"
 			/>
 		</div>
-		<GenerateCard title="Skills" col>
+		<Card title="Skills" col class="pb-16">
 			<div
 				v-for="(icons, title) in filteringSkills"
 				v-show="icons.length"
@@ -54,6 +55,6 @@ function isChoose(iconName) {
 					/>
 				</div>
 			</div>
-		</GenerateCard>
+		</Card>
 	</div>
 </template>

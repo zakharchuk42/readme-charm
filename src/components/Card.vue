@@ -13,7 +13,7 @@ const classes = ['flex flex-wrap gap-10 pb-4', props.col && 'flex-col']
 </script>
 
 <template>
-	<div class="pb-16">
+	<div>
 		<h2 class="text-3xl font-bold pb-6 text-stone-900">{{ title }}</h2>
 		<div :class="classes">
 			<slot></slot>

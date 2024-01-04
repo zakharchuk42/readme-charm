@@ -2,7 +2,7 @@
 import { FIELDS_ABOUT_ME } from '../../utils/constants.ts'
 import { STATE_FORM } from '../../modules/state-form.ts'
 import BaseInput from '../BaseInput.vue'
-import GenerateCard from '../GenerateCard.vue'
+import Card from '../Card.vue'
 import EditFieldsButtons from '../EditFieldsButtons.vue'
 import { computed } from 'vue'
 
@@ -10,7 +10,7 @@ const aboutMe = computed(() => STATE_FORM.value.aboutMe)
 </script>
 
 <template>
-	<GenerateCard title="About Me" col>
+	<Card title="About Me" col class="pb-16">
 		<transition-group name="list-fields">
 			<div
 				v-for="(field, index) in aboutMe"
@@ -38,5 +38,5 @@ const aboutMe = computed(() => STATE_FORM.value.aboutMe)
 			:fields-array="aboutMe"
 			:fields-options="FIELDS_ABOUT_ME"
 		/>
-	</GenerateCard>
+	</Card>
 </template>

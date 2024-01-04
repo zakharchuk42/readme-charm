@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { STATE_FORM } from '../../modules/state-form.ts'
-import GenerateCard from '../GenerateCard.vue'
+import Card from '../Card.vue'
 import BaseInput from '../BaseInput.vue'
 import EditFieldsButtons from '../EditFieldsButtons.vue'
 import { FIELDS_SOCIAL } from '../../utils/constants.ts'
@@ -10,7 +10,7 @@ const socials = computed(() => STATE_FORM.value.socials)
 </script>
 
 <template>
-	<GenerateCard title="Social" col>
+	<Card title="Social" col class="pb-16">
 		<transition-group name="list-fields">
 			<div
 				v-for="(social, index) in socials"
@@ -35,5 +35,5 @@ const socials = computed(() => STATE_FORM.value.socials)
 			:fields-array="socials"
 			:fields-options="FIELDS_SOCIAL"
 		/>
-	</GenerateCard>
+	</Card>
 </template>

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { STATE_FORM } from '../../modules/state-form.ts'
 import BaseInput from '../BaseInput.vue'
-import GenerateCard from '../GenerateCard.vue'
+import Card from '../Card.vue'
 import { FIELDS_MY_LINK } from '../../utils/constants.ts'
 import EditFieldsButtons from '../EditFieldsButtons.vue'
 import { computed } from 'vue'
@@ -10,7 +10,7 @@ const myLinks = computed(() => STATE_FORM.value.myLinks)
 </script>
 
 <template>
-	<GenerateCard title="My links" col>
+	<Card title="My links" col class="pb-16">
 		<transition-group name="list-fields">
 			<div
 				v-for="(myLink, index) in myLinks"
@@ -45,5 +45,5 @@ const myLinks = computed(() => STATE_FORM.value.myLinks)
 			:fields-array="myLinks"
 			:fields-options="FIELDS_MY_LINK"
 		/>
-	</GenerateCard>
+	</Card>
 </template>

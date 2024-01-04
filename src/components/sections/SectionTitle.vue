@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import GenerateCard from '../GenerateCard.vue'
+import Card from '../Card.vue'
 import BaseInput from '../BaseInput.vue'
 import { STATE_FORM } from '../../modules/state-form.ts'
 </script>
 
 <template>
-	<GenerateCard title="Title">
+	<Card title="Title" class="pb-16">
 		<div class="w-5/12">
 			<BaseInput
 				v-model="STATE_FORM.title.default"
@@ -21,5 +21,5 @@ import { STATE_FORM } from '../../modules/state-form.ts'
 				emoji
 			/>
 		</div>
-	</GenerateCard>
+	</Card>
 </template>

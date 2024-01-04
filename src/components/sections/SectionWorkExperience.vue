@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import GenerateCard from '../GenerateCard.vue'
+import Card from '../Card.vue'
 import EditFieldsButtons from '../EditFieldsButtons.vue'
 import BaseInput from '../BaseInput.vue'
 import { FIELDS_WORK_EXPERIENCE } from '../../utils/constants.ts'
@@ -10,7 +10,7 @@ const workExperience = computed(() => STATE_FORM.value.workExperience)
 </script>
 
 <template>
-	<GenerateCard title="Work Experience" col>
+	<Card title="Work Experience" col class="pb-16">
 		<transition-group name="list-fields">
 			<div
 				v-for="(field, index) in workExperience"
@@ -47,5 +47,5 @@ const workExperience = computed(() => STATE_FORM.value.workExperience)
 			:fields-array="workExperience"
 			:fields-options="FIELDS_WORK_EXPERIENCE"
 		/>
-	</GenerateCard>
+	</Card>
 </template>

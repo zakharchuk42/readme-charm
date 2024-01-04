@@ -21,7 +21,7 @@ export type WidgetsType = {
 	link: string
 }
 
-type MyLinksType = {
+export type MyLinksType = {
 	description: string
 	text: string
 	link: string

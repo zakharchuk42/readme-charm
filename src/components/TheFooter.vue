@@ -1,17 +1,12 @@
 <script lang="ts" setup>
 import TheLogo from './TheLogo.vue'
-import {
-	ICONS_LINK,
-	MY_SECTION,
-	NAV_ITEMS,
-	PAGE_GENERATE_README,
-} from '../utils/constants.ts'
+import { ICONS_LINK, MY_SECTION, NAV_ITEMS } from '../utils/constants.ts'
 import { navigate } from '../modules/router.ts'
 import BaseIcon from './BaseIcon.vue'
 import FooterCard from './FooterCard.vue'
 
-function handleClick(page) {
-	navigate(page || PAGE_GENERATE_README)
+function handleClick(page: string) {
+	navigate(page)
 }
 </script>
 
@@ -37,7 +32,7 @@ function handleClick(page) {
 					</li>
 				</ul>
 			</FooterCard>
-			<FooterCard title="Find Me">
+			<FooterCard title="My socials">
 				<ul>
 					<li
 						v-for="page in MY_SECTION"

@@ -143,13 +143,13 @@ export const RESET_FORM = {
 	},
 	support: [
 		{
-			src: '/readme-charm/src/app/images/buy_me_coffee.svg',
+			src: '/readme-charm/assets/buy_me_coffee.svg',
 			link: '',
 			textLink: '',
 			placeholder: 'https://www.buymeacoffee.com/username',
 		},
 		{
-			src: '/readme-charm/src/app/images/donatello.png',
+			src: '/readme-charm/assets/donatello.png',
 			link: '',
 			textLink: '',
 			placeholder: 'https://donatello.to/username',

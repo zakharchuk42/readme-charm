@@ -1,21 +1,23 @@
-<script setup>
-import data from '../app/emojis-data.json'
+<script lang="ts" setup>
+import { emojiData } from '../utils/emojis-data.ts'
 import { computed, inject, ref } from 'vue'
 import BaseIcon from './BaseIcon.vue'
 import { INPUT_ICON_EMOJI } from '../utils/constants.ts'
 
-const emojiClick = inject('emojiClick')
+const emojiClick: ((emoji: string) => void) | undefined = inject('emojiClick')
 
 const isShow = ref(false)
 
-const categories = computed(() => Object.keys(data))
+const categories = computed(() => Object.keys(emojiData))
 const category_emojis = computed(
-	() => (category) => Object.values(data[category])
+	() => (category: string) => Object.values(emojiData[category])
 )
 
-function handleEmojiClick(emoji) {
+function handleEmojiClick(emoji: string) {
 	handleShowEmoji()
-	emojiClick(emoji)
+	if (emojiClick) {
+		emojiClick(emoji)
+	}
 }
 
 function handleShowEmoji() {
@@ -39,8 +41,8 @@ function handleShowEmoji() {
 				<span>{{ category }}</span>
 				<div class="emojis_container">
 					<button
-						@click.prevent="handleEmojiClick(emoji)"
 						v-for="(emoji, index) in category_emojis(category)"
+						@click.prevent="handleEmojiClick(emoji as string)"
 						:key="`emoji_${index}`"
 					>
 						{{ emoji }}

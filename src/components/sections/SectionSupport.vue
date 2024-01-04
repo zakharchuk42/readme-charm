@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { STATE_FORM } from '../../modules/state-form.ts'
-import GenerateCard from '../GenerateCard.vue'
+import Card from '../Card.vue'
 import BaseInput from '../BaseInput.vue'
 import { computed } from 'vue'
 
@@ -8,7 +8,7 @@ const support = computed(() => STATE_FORM.value.support)
 </script>
 
 <template>
-	<GenerateCard title="Support" col>
+	<Card title="Support" col>
 		<div
 			v-for="item in support"
 			:key="item.placeholder"
@@ -25,5 +25,5 @@ const support = computed(() => STATE_FORM.value.support)
 				/>
 			</div>
 		</div>
-	</GenerateCard>
+	</Card>
 </template>

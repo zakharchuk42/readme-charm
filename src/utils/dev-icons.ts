@@ -8,7 +8,14 @@ import {
 	ICONS_TESTING,
 } from './constants.ts'
 
-export const DEV_ICONS = {
+export interface IDevIcons {
+	[key: string]: {
+		name: string
+		src: string
+	}[]
+}
+
+export const DEV_ICONS: IDevIcons = {
 	[ICONS_FRONTEND]: [
 		{
 			name: 'html5',
