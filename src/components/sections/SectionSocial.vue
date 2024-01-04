@@ -4,8 +4,9 @@ import GenerateCard from '../GenerateCard.vue'
 import BaseInput from '../BaseInput.vue'
 import EditFieldsButtons from '../EditFieldsButtons.vue'
 import { FIELDS_SOCIAL } from '../../utils/constants.ts'
+import { computed } from 'vue'
 
-const socials = STATE_FORM.value.socials
+const socials = computed(() => STATE_FORM.value.socials)
 </script>
 
 <template>

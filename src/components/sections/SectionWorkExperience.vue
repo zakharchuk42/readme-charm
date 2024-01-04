@@ -4,8 +4,9 @@ import EditFieldsButtons from '../EditFieldsButtons.vue'
 import BaseInput from '../BaseInput.vue'
 import { FIELDS_WORK_EXPERIENCE } from '../../utils/constants.ts'
 import { STATE_FORM } from '../../modules/state-form.ts'
+import { computed } from 'vue'
 
-const workExperience = STATE_FORM.value.workExperience
+const workExperience = computed(() => STATE_FORM.value.workExperience)
 </script>
 
 <template>
@@ -20,6 +21,7 @@ const workExperience = STATE_FORM.value.workExperience
 					<BaseInput
 						v-model="field.companyName"
 						:default-value="field.companyName"
+						placeholder="Company Name"
 					/>
 					<BaseInput
 						v-model="field.years"

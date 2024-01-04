@@ -4,9 +4,8 @@ import {
 	GITHUB_WIDGET_STATS,
 	GITHUB_WIDGET_STREAK,
 	GITHUB_WIDGET_TROPHY,
-	PAGE_RESULT,
+	RESET_FORM,
 } from '../utils/constants.ts'
-import { navigate } from './router.ts'
 import { IStateForm } from '../utils/types.ts'
 
 export const STATE_FORM: Ref<IStateForm> = ref({
@@ -167,8 +166,8 @@ export const STATE_FORM: Ref<IStateForm> = ref({
 	],
 })
 
-export function stateForm() {
-	navigate(PAGE_RESULT)
+export function resetForm() {
+	STATE_FORM.value = { ...RESET_FORM }
 }
 
 export function addFields(array: Array<string>, options: any) {

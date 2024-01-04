@@ -25,6 +25,7 @@ export const routes = {
 }
 
 export function navigate(page: string) {
+	document.body.scrollIntoView()
 	currentPage.value = page
 }
 

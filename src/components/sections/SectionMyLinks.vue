@@ -4,8 +4,9 @@ import BaseInput from '../BaseInput.vue'
 import GenerateCard from '../GenerateCard.vue'
 import { FIELDS_MY_LINK } from '../../utils/constants.ts'
 import EditFieldsButtons from '../EditFieldsButtons.vue'
+import { computed } from 'vue'
 
-const myLinks = STATE_FORM.value.myLinks
+const myLinks = computed(() => STATE_FORM.value.myLinks)
 </script>
 
 <template>
@@ -20,6 +21,7 @@ const myLinks = STATE_FORM.value.myLinks
 					<BaseInput
 						v-model="myLink.description"
 						:default-value="myLink.description"
+						placeholder="descriptoopn"
 						emoji
 					/>
 				</div>

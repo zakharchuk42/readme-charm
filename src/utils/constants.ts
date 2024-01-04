@@ -69,3 +69,77 @@ export const FIELDS_WORK_EXPERIENCE = {
 	description: '',
 	stack: '',
 }
+
+export const RESET_FORM = {
+	title: {
+		default: '',
+		name: '',
+	},
+	description: '',
+	myLinks: [
+		{
+			description: '',
+			text: '',
+			link: '',
+		},
+	],
+	aboutMe: [
+		{
+			description: '',
+			placeholder: '',
+			text: '',
+		},
+	],
+	workExperience: [
+		{
+			companyName: '',
+			years: '',
+			description: '',
+			stack: '',
+		},
+	],
+	skills: [],
+	socials: [
+		{
+			label: '',
+			textLink: '',
+			link: '',
+			placeholder: 'https://www.linkedin.com/in/username/',
+		},
+	],
+	gitHub: {
+		username: '',
+		widgets: [
+			{
+				name: GITHUB_WIDGET_MOST_USED,
+				link: '',
+			},
+			{
+				name: GITHUB_WIDGET_STATS,
+				link: '',
+			},
+			{
+				name: GITHUB_WIDGET_STREAK,
+				link: '',
+			},
+			{
+				name: GITHUB_WIDGET_TROPHY,
+				link: '',
+			},
+		],
+	},
+	support: [
+		{
+			src: '/readme-charm/src/app/images/buy_me_coffee.svg',
+			link: '',
+			textLink: '',
+			placeholder: 'https://www.buymeacoffee.com/username',
+		},
+		{
+			src: '/readme-charm/src/app/images/donatello.png',
+			link: '',
+			textLink: '',
+			placeholder: 'https://donatello.to/username',
+		},
+	],
+}

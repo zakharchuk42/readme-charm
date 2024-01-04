@@ -10,6 +10,7 @@ import { STATE_FORM } from '../../modules/state-form.ts'
 			<BaseInput
 				v-model="STATE_FORM.title.default"
 				:default-value="STATE_FORM.title.default"
+				placeholder="description"
 				emoji
 			/>
 		</div>

@@ -4,8 +4,9 @@ import { STATE_FORM } from '../../modules/state-form.ts'
 import BaseInput from '../BaseInput.vue'
 import GenerateCard from '../GenerateCard.vue'
 import EditFieldsButtons from '../EditFieldsButtons.vue'
+import { computed } from 'vue'
 
-const aboutMe = STATE_FORM.value.aboutMe
+const aboutMe = computed(() => STATE_FORM.value.aboutMe)
 </script>
 
 <template>
