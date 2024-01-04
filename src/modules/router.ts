@@ -2,7 +2,7 @@ import { ref } from 'vue'
 import {
 	PAGE_GENERATE_README,
 	PAGE_GENERATE_README_PROJECT,
-	PAGE_HOW_IT_WORK,
+	PAGE_HOW_IT_WORKS,
 	PAGE_RESULT,
 } from '../utils/constants.ts'
 import { isPageValid } from '../utils/validators.ts'
@@ -20,7 +20,7 @@ export const currentPage = ref(normalizePathHash())
 export const routes = {
 	[PAGE_GENERATE_README]: TheGenerate,
 	[PAGE_GENERATE_README_PROJECT]: TheGenerateProject,
-	[PAGE_HOW_IT_WORK]: TheHowWorks,
+	[PAGE_HOW_IT_WORKS]: TheHowWorks,
 	[PAGE_RESULT]: TheResult,
 }
 

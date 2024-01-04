@@ -7,6 +7,7 @@ import {
 	RESET_FORM,
 } from '../utils/constants.ts'
 import { IStateForm } from '../utils/types.ts'
+import { resultGenerateReadme } from './result-generate-readme.ts'
 
 export const STATE_FORM: Ref<IStateForm> = ref({
 	title: {
@@ -168,6 +169,16 @@ export const STATE_FORM: Ref<IStateForm> = ref({
 
 export function resetForm() {
 	STATE_FORM.value = { ...RESET_FORM }
+}
+
+export function copyMarkdown() {
+	const textToCopy = resultGenerateReadme(STATE_FORM.value)
+	let textArea = document.createElement('textarea')
+	document.body.appendChild(textArea)
+	textArea.value = textToCopy
+	textArea.select()
+	document.execCommand('copy')
+	document.body.removeChild(textArea)
 }
 
 export function addFields(array: Array<string>, options: any) {

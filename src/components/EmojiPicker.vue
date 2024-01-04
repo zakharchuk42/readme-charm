@@ -29,7 +29,7 @@ function handleShowEmoji() {
 		@click="handleShowEmoji"
 		class="cursor-pointer"
 	/>
-	<transition name="emoji">
+	<transition name="fade">
 		<div class="emoji_picker" v-show="isShow">
 			<div
 				class="category"

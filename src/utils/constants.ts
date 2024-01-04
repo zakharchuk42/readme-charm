@@ -1,7 +1,7 @@
 export const PAGE_GENERATE_README = 'generate-readme'
 export const PAGE_GENERATE_README_PROJECT = 'generate-readme-project'
 export const PAGE_RESULT = 'result'
-export const PAGE_HOW_IT_WORK = 'how-it-works'
+export const PAGE_HOW_IT_WORKS = 'how-it-works'
 // export const PAGE_BEST_WORK = 'best-work'
 
 export const NAV_ITEMS = [
@@ -14,12 +14,25 @@ export const NAV_ITEMS = [
 		name: 'Project ReadMe',
 	},
 	{
-		page: PAGE_HOW_IT_WORK,
+		page: PAGE_HOW_IT_WORKS,
 		name: 'How it works?',
 	},
 	{
 		page: PAGE_RESULT,
 		name: '',
+	},
+]
+
+export const MY_SECTION = [
+	{
+		page: 'https://www.linkedin.com/in/vit-zakharchuk/',
+		name: 'linkedIn',
+		icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg',
+	},
+	{
+		page: 'https://github.com/zakharchuk42',
+		name: 'GitHub',
+		icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
 	},
 ]
 
