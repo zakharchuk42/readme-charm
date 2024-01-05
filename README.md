@@ -6,7 +6,7 @@ This site will help you generate Markdown markup for your README.md file. This m
 |<img src='https://zakharchuk42.github.io/readme-charm/assets/github-readme-lz30UYhm.png' alt='GitHub Readme'  width="750"/>|
 
 ## 🔩 How create it?
-1. Create new repository there [create new repo](https://github.com/new), name it same as your GitHub username.
+1. Create new repository there [create new repo](https://github.com/new), name it same as your GitHub username.<br>
 1.1 If you succeeded, you will see block describing that this repo will be special.
 2. Check the **'Public'** checkbox.
 3. Check **'Add a README file'**.
