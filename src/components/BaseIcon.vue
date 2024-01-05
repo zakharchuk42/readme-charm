@@ -13,9 +13,5 @@ defineProps({
 </script>
 
 <template>
-	<img
-		:src="`/readme-charm/src/app/images/${icon}`"
-		alt="search"
-		:width="width"
-	/>
+	<img :src="`/readme-charm/images/${icon}`" alt="search" :width="width" />
 </template>

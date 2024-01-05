@@ -55,10 +55,10 @@ export const GITHUB_WIDGET_STREAK = 'Commit current streak'
 export const GITHUB_WIDGET_TROPHY = 'GitHub Trophy'
 
 export const EXAMPLE_GITHUB_WIDGETS = [
-	'/readme-charm/src/app/images/most-used.png',
-	'/readme-charm/src/app/images/stats.png',
-	'/readme-charm/src/app/images/commit-streak.png',
-	'/readme-charm/src/app/images/trophy.png',
+	'/readme-charm/images/most-used.png',
+	'/readme-charm/images/stats.png',
+	'/readme-charm/images/commit-streak.png',
+	'/readme-charm/images/trophy.png',
 ]
 
 export const FIELDS_SOCIAL = {
@@ -143,13 +143,13 @@ export const RESET_FORM = {
 	},
 	support: [
 		{
-			src: '/readme-charm/assets/buy_me_coffee.svg',
+			src: '/readme-charm/images/buy_me_coffee.svg',
 			link: '',
 			textLink: '',
 			placeholder: 'https://www.buymeacoffee.com/username',
 		},
 		{
-			src: '/readme-charm/assets/donatello.png',
+			src: '/readme-charm/images/donatello.png',
 			link: '',
 			textLink: '',
 			placeholder: 'https://donatello.to/username',

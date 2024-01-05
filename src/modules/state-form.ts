@@ -153,13 +153,13 @@ export const STATE_FORM: Ref<IStateForm> = ref({
 	},
 	support: [
 		{
-			src: '/readme-charm/src/app/images/buy_me_coffee.svg',
+			src: '/readme-charm/images/buy_me_coffee.svg',
 			link: '',
 			textLink: '',
 			placeholder: 'https://www.buymeacoffee.com/username',
 		},
 		{
-			src: '/readme-charm/src/app/images/donatello.png',
+			src: '/readme-charm/images/donatello.png',
 			link: '',
 			textLink: '',
 			placeholder: 'https://donatello.to/username',

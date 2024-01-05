@@ -56,7 +56,7 @@ provide('emojiClick', emojiClick)
 			v-model="writeableComputed"
 			class="w-full text-stone-800 tracking-widest border-b border-b-stone-700 text-xl pl-2 pr-6 py-1 transition focus:outline-none focus:border-b-stone-700"
 		/>
-		<div v-show="icon" class="absolute right-0 top-2 flex items-center">
+		<div v-if="icon" class="absolute right-0 top-2 flex items-center">
 			<BaseIcon :icon="icon" />
 		</div>
 		<div v-show="emoji" class="absolute right-0 top-2 flex items-center">
