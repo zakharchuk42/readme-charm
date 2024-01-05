@@ -1,18 +1,24 @@
-# Vue 3 + TypeScript + Vite
+## 💬 What is this site?
+This site will help you generate Markdown markup for your README.md file. This markup can be used to highlight important aspects about you or your project.
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+|Example|
+|:-----:|
+|<img src='https://zakharchuk42.github.io/readme-charm/assets/github-readme-lz30UYhm.png' alt='GitHub Readme'  width="750"/>|
 
-## Recommended IDE Setup
+## 🔩 How create it?
+1. Create new repository there [create new repo](https://github.com/new), name it same as your GitHub username.
+1.1 If you succeeded, you will see block describing that this repo will be special.
+2. Check the **'Public'** checkbox.
+3. Check **'Add a README file'**.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+|How create special repo|
+|:-----:|
+|<img src='https://zakharchuk42.github.io/readme-charm/assets/github-steps-Lpp16Kg2.png' alt='GitHub Readme'  width="750"/>|
 
-## Type Support For `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## 📙 What next?
+1. Go to the [this site](https://zakharchuk42.github.io/readme-charm/#generate-readme) and fill the fields.
+2. Click the **'Generate ReadMe'** button at the bottom of the page.
+3. Click **'Copy MarkDown'** button.
+4. Your markdown is copied. Go to the GitHub repo which we created at the beginning.
+5. Past in to README.md your copy code.
+6. DONE! You did a great job!
